@@ -15,7 +15,7 @@ This is the rulebook for every script, title and thumbnail on the channel, and e
   - 25 new ideas.
   - 11 or more videos: 3 long-form plus 8 Shorts.
   - Each long-form gets a teaser Short and a standalone Short, and the run adds 2 extra standalone Shorts.
-- **Release:** published publicly via Metricool, spread out until the next run.
+- **Release:** uploaded **unlisted** via Metricool right after each run. The owner switches them to public in Studio once YouTube has finished processing them.
 - **Long-form:** 8–12 minutes, 1,200–1,800 words. At this voice's pace a script runs about 0.42 s per word, so **write at least 1,200 words** to clear 8:00, the minimum for mid-roll ads. Add real "wait, really?" facts rather than padding.
 - **Shorts:** 30–55 seconds, 90–140 words, ending by pointing to the long video.
 

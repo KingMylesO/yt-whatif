@@ -5,7 +5,7 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
 ## Standing instructions from the owner (Myles)
 - A scheduled task runs this **every Wednesday, Friday, Saturday and Sunday** at 01:43 Africa/Lagos.
 - Each run: **25 new ideas**, then **at least 11 finished videos: 3 long-form + 8 Shorts**.
-- Upload **public**, scheduled through **Metricool**, spread out until the next run. No script review step, so nobody is there to answer questions. Make sensible decisions and record them in the report.
+- Upload **unlisted** through **Metricool**, all right after the run (≈30 s apart). The owner switches them to **public** in YouTube Studio once YouTube has finished processing them. No script review step, so nobody is there to answer questions. Make sensible decisions and record them in the report.
 - Quality beats quantity, except that the minimum of 11 still stands. If a video fails QA and can't be fixed, replace it with another idea; don't publish it broken.
 
 ## Workspace facts
@@ -50,20 +50,22 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
     3. **Schedule each video** with `createScheduledPost`:
        - `providers` [{"network":"youtube"}], `autoPublish` true.
        - `text` = the description.
-       - `youtubeData` = {title, type "video" or "short", privacy **"public"**, tags, category "SCIENCE_TECHNOLOGY", madeForKids false, isAiGeneratedContent false}.
+       - `youtubeData` = {title, type "video" or "short", privacy **"unlisted"**, tags, category "SCIENCE_TECHNOLOGY", madeForKids false, isAiGeneratedContent false}.
        - Metricool copies the media to its own storage the moment the post is created.
        - For long-form videos, include `videoThumbnailUrl`. If you get `VIDEO_THUMBNAIL_NOT_APPLICABLE` (channel not verified yet), retry without it.
     4. **When to post:**
-       - Spread the 11 videos from now until the next run (Wed→Fri, Fri→Sat, Sat→Sun, Sun→Wed).
-       - Use `getBestTimeToPostByNetwork` (youtube) to pick slots, at least 45 minutes apart.
-       - Each long-form goes before its Shorts. Metricool rounds to whole minutes.
+       - Upload all 11 straight away: the first one ~3 minutes after scheduling, then 30 seconds apart. Metricool rounds to whole minutes, so that works out at about 2 per minute.
+       - Put the 3 long-form videos first, then the Shorts.
     5. **Clean up:** force-push an empty commit to `media` so the links stop working.
-    6. **Verify** with `getScheduledPosts`: 11 posts with the right dates.
+    6. **Verify** with `getScheduledPosts`: wait until all 11 show `PUBLISHED` (uploaded as unlisted) and note each `publicUrl`.
 13. **Record:**
     - Append the batch to `topics.md` (titles plus scheduled dates).
     - Commit `pipeline/narration_bN.py`, `pipeline/scenes_bN_*.py`, the ideas, the scripts and `reports/YYYY-MM-DD.md` to `main`, then push.
     - If the Projects tool is available, write the report to the "YT" project as `claude/batch-NN-production.md`.
-14. **Finish:** send one short summary covering the 11 titles with their go-live times, anything skipped or replaced, and any decisions you made.
+14. **Finish:** send one short summary covering:
+    - the 11 titles with their YouTube links (unlisted);
+    - a reminder to the owner to switch them to **Public** in YouTube Studio once processing finishes (Content → select them → Edit → Visibility → Public);
+    - anything skipped or replaced, and any decisions you made.
 
 ## Known gotchas
 - `skia.FontStyle.Black` doesn't exist. Use `skia.FontStyle(900, kNormal_Width, kUpright_Slant)` (already done in `core.font`).
