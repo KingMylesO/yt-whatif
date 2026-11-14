@@ -1,11 +1,13 @@
+import os
 """Generate narration with Kokoro (af_heart) and build per-video timelines."""
 import hashlib, json, os, sys
 import numpy as np, soundfile as sf
 from scipy.signal import resample_poly
 sys.path.insert(0, os.path.dirname(__file__))
-from narration import VIDEOS as V1
-from narration2 import VIDEOS as V2
-VIDEOS = {**V1, **V2}
+import glob as _glob, importlib as _il
+VIDEOS = {}
+for _p in sorted(_glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "narration*.py"))):
+    VIDEOS.update(_il.import_module(os.path.basename(_p)[:-3]).VIDEOS)
 
 SR = 48000
 CACHE = "/home/claude/proj/build/tts_cache"

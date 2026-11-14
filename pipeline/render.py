@@ -4,13 +4,10 @@ import numpy as np, skia
 sys.path.insert(0, os.path.dirname(__file__))
 from core import *
 import scenes as SC
-import scenes_sleep as SZ
-ALL = {**SC.SCENES, **SZ.SCENES}
-for _m in ("common2", "scenes_trees", "scenes_ast", "scenes_med"):
-    try:
-        ALL.update(__import__(_m).SCENES)
-    except ImportError as _e:
-        print("skip", _m, _e)
+import glob as _glob
+ALL = dict(SC.SCENES)
+for _m in ["common2"] + sorted(os.path.basename(p)[:-3] for p in _glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "scenes_*.py"))):
+    ALL.update(__import__(_m).SCENES)
 
 FPS = 30
 B = "/home/claude/proj/build"

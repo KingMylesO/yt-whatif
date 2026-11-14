@@ -162,12 +162,19 @@ def envelope_points(tl, name):
         return arp, pad
     return ([0, T], [1, 1]), ([0, 0.5, T - 1.0, T], [0.7, 1, 1, 0])
 
+def _music_map():
+    import glob, importlib, os
+    m = {}
+    for p in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "narration*.py"))):
+        m.update(getattr(importlib.import_module(os.path.basename(p)[:-3]), "MUSIC", {}))
+    return m
+
 def mix(name):
     tl = json.load(open(f"{B}/{name}/timeline.json")); T = tl["total"]; n = int(T * SR)
     voice, _ = sf.read(f"{B}/{name}/voice.wav", dtype="float64")
     voice = hp(voice[:n], 70); voice = np.pad(voice, (0, max(0, n - len(voice))))
     voice /= np.max(np.abs(voice)) + 1e-9
-    preset = PRESET_FOR[name]
+    preset = PRESET_FOR.get(name) or _music_map().get(name) or ("short" if name.startswith("short") else "space")
     arp, pad = envelope_points(tl, name)
     m = music(T, preset, arp, pad)
     m /= np.max(np.abs(m)) + 1e-9

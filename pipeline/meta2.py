@@ -1,7 +1,10 @@
 """Batch 02: chapters, SRT captions and the upload-metadata sheet."""
 import json, re, sys
 sys.path.insert(0, "/home/claude/proj")
-from narration2 import CHAPTERS
+import glob as _glob, importlib as _il, os as _os
+CHAPTERS = {}
+for _p in sorted(_glob.glob("/home/claude/proj/narration*.py")):
+    CHAPTERS.update(getattr(_il.import_module(_os.path.basename(_p)[:-3]), "CHAPTERS", {}))
 B = "/home/claude/proj/build"; OUT = "/home/claude/out/batch2"
 
 def mmss(t): t = int(t); return f"{t // 60}:{t % 60:02d}"
@@ -45,10 +48,11 @@ def chapters(name):
 def length(name): return mmss(json.load(open(f"{B}/{name}/timeline.json"))["total"])
 
 if __name__ == "__main__":
-    for name, fn in [("b2_trees", "what_if_trees_never_rot.en.srt"), ("b2_asteroid", "what_if_asteroid_30_seconds_late.en.srt"),
-                     ("b2_med", "what_if_mediterranean_dried_up.en.srt")]:
-        srt(name, f"{OUT}/{fn}")
-        ch, tot = chapters(name)
-        print(f"== {name} ({tot})\n{ch}\n")
-    for n in ("short_b2_wood", "short_b2_oxygen", "short_b2_30s", "short_b2_belt", "short_b2_med", "short_b2_amoc"):
-        print(n, length(n))
+    # usage: python3 meta2.py OUT_DIR name=file.srt [name=file.srt ...] [short_name ...]
+    OUT = sys.argv[1]
+    for a in sys.argv[2:]:
+        if "=" in a:
+            name, fn = a.split("=", 1); srt(name, f"{OUT}/{fn}")
+            ch, tot = chapters(name); print(f"== {name} ({tot})\n{ch}\n")
+        else:
+            print(a, length(a))
