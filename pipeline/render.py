@@ -15,6 +15,12 @@ B = "/home/claude/proj/build"
 def load(name): return json.load(open(f"{B}/{name}/timeline.json"))
 def size(name): return (1080, 1920) if name.startswith("short") else (1920, 1080)
 
+def _tts_text(s):
+    try:
+        import meta2; return meta2.tts_to_text(s)
+    except Exception:
+        return s
+
 def chunks(text, maxw=3):
     words = text.replace("…", "… ").split()
     out, cur = [], []
@@ -28,7 +34,7 @@ def chunks(text, maxw=3):
 def caption_at(sc, t):
     for L in sc["lines"]:
         if L["start"] - 0.05 <= t <= L["end"] + 0.25:
-            ch = chunks(L["text"])
+            ch = chunks(_tts_text(L["text"]))
             wts = [len(c_) + (4 if c_[-1] in ".,?!:;…" else 0) for c_ in ch]
             tot = sum(wts); d = L["end"] - L["start"]; acc = L["start"]
             for c_, w in zip(ch, wts):

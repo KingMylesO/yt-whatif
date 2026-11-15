@@ -1,0 +1,575 @@
+1
+00:00:00,300 --> 00:00:05,255
+There's one animal with a backbone that's known to have algae living inside its cells.
+
+2
+00:00:05,255 --> 00:00:06,580
+The spotted salamander.
+
+3
+00:00:07,080 --> 00:00:11,209
+Its eggs turn green with algae living in the jelly around each embryo,
+
+4
+00:00:11,209 --> 00:00:14,926
+and some of those algae move right into the embryo's own cells.
+
+5
+00:00:15,426 --> 00:00:17,650
+So what if you could do something like that?
+
+6
+00:00:17,650 --> 00:00:20,077
+What if your skin could make food from sunlight?
+
+7
+00:00:24,333 --> 00:00:25,515
+Here are the rules.
+
+8
+00:00:25,515 --> 00:00:30,678
+Your skin is packed with chloroplasts, the tiny green solar panels that plants use.
+
+9
+00:00:30,678 --> 00:00:34,970
+A leaf holds about half a million of them in every square millimeter.
+
+10
+00:00:35,470 --> 00:00:40,335
+Add sunlight, water and carbon dioxide, and they make sugar for your body.
+
+11
+00:00:40,335 --> 00:00:42,110
+You can still eat normally.
+
+12
+00:00:42,110 --> 00:00:43,688
+The sunlight is a bonus.
+
+13
+00:00:43,688 --> 00:00:48,027
+And to keep things simple, the rest of you stays exactly the same.
+
+14
+00:00:48,527 --> 00:00:51,475
+Chloroplasts were once free-living bacteria,
+
+15
+00:00:51,475 --> 00:00:55,227
+swallowed by another cell well over a billion years ago.
+
+16
+00:00:55,227 --> 00:01:00,118
+They even still carry their own DNA, a leftover from that bacterial past.
+
+17
+00:01:00,118 --> 00:01:03,602
+Every leaf on Earth still runs on that ancient deal.
+
+18
+00:01:04,467 --> 00:01:07,013
+That deal is also why you can breathe.
+
+19
+00:01:07,013 --> 00:01:09,627
+About two point four billion years ago,
+
+20
+00:01:09,627 --> 00:01:14,184
+tiny photosynthesizing microbes started filling the air with oxygen.
+
+21
+00:01:14,684 --> 00:01:15,085
+Today,
+
+22
+00:01:15,085 --> 00:01:20,843
+tiny drifting plankton in the ocean make roughly half of the oxygen produced on Earth.
+
+23
+00:01:20,843 --> 00:01:24,727
+Every breath you take is, in a way, exhaust from sunlight.
+
+24
+00:01:25,567 --> 00:01:27,316
+So first, you'd turn green.
+
+25
+00:01:27,316 --> 00:01:32,240
+Chlorophyll absorbs red and blue light strongly, and uses less of the green.
+
+26
+00:01:32,740 --> 00:01:35,967
+So green is what bounces back to everyone else's eyes.
+
+27
+00:01:38,733 --> 00:01:40,008
+Seven in the morning.
+
+28
+00:01:40,008 --> 00:01:44,015
+You step outside, sunlight hits your skin, and for the first time,
+
+29
+00:01:44,015 --> 00:01:46,321
+your body starts making its own sugar.
+
+30
+00:01:46,821 --> 00:01:49,812
+Most of it would come in the hours around noon.
+
+31
+00:01:49,812 --> 00:01:54,649
+At dawn and dusk, when the light is low and weak, you'd make almost nothing.
+
+32
+00:01:54,649 --> 00:01:59,359
+On a gray, overcast day, you'd make only a fraction of a sunny day's haul.
+
+33
+00:01:59,359 --> 00:02:00,759
+So how much, in total?
+
+34
+00:02:00,759 --> 00:02:01,904
+Let's do the math.
+
+35
+00:02:04,667 --> 00:02:06,587
+At midday, under a clear sky,
+
+36
+00:02:06,587 --> 00:02:10,890
+sunlight delivers about a thousand watts onto every square meter.
+
+37
+00:02:10,890 --> 00:02:14,400
+Your skin covers about one point eight square meters,
+
+38
+00:02:14,400 --> 00:02:17,578
+but only about half of it faces the Sun at once.
+
+39
+00:02:18,078 --> 00:02:19,069
+Now efficiency.
+
+40
+00:02:19,069 --> 00:02:19,731
+In theory,
+
+41
+00:02:19,731 --> 00:02:24,821
+the best plants can store only about five or six percent of sunlight as food.
+
+42
+00:02:24,821 --> 00:02:29,251
+Even the best real crops manage two or three percent over a season,
+
+43
+00:02:29,251 --> 00:02:32,028
+and typical plants, more like one percent.
+
+44
+00:02:32,528 --> 00:02:34,680
+And the Sun isn't overhead all day.
+
+45
+00:02:34,680 --> 00:02:38,678
+Average in the mornings, the evenings, the clouds and the nights,
+
+46
+00:02:38,678 --> 00:02:42,245
+and your green skin might collect around one or two watts.
+
+47
+00:02:42,245 --> 00:02:45,198
+That's less than a small phone charger puts out.
+
+48
+00:02:46,033 --> 00:02:49,663
+Your body runs on about a hundred watts, all day, every day.
+
+49
+00:02:50,163 --> 00:02:58,888
+Oxford plant ecologist Lindsay Turnbull estimated photosynthetic skin would cover about one percent of a person's daily energy.
+
+50
+00:02:58,888 --> 00:03:01,910
+In food terms, that's about a cracker a day.
+
+51
+00:03:02,410 --> 00:03:03,891
+To run on sunlight alone,
+
+52
+00:03:03,891 --> 00:03:07,445
+she figured you'd need about a tennis court's worth of skin.
+
+53
+00:03:07,445 --> 00:03:11,235
+That's around a hundred and fifty times more skin than you have.
+
+54
+00:03:12,100 --> 00:03:14,187
+So how do plants get away with it?
+
+55
+00:03:14,187 --> 00:03:16,458
+They're built completely differently.
+
+56
+00:03:16,458 --> 00:03:20,141
+A tree spreads its leaves out into a huge, thin solar array.
+
+57
+00:03:20,641 --> 00:03:24,908
+And it doesn't walk around, doesn't keep its body warm, and doesn't run a brain.
+
+58
+00:03:25,408 --> 00:03:27,403
+Even then, plants pay a price.
+
+59
+00:03:27,403 --> 00:03:32,789
+Sugar-making needs water, and leaves lose huge amounts of it through their pores.
+
+60
+00:03:32,789 --> 00:03:33,321
+The U.S.
+
+61
+00:03:33,321 --> 00:03:40,902
+Geological Survey says a large oak tree can give off about a hundred and fifty thousand liters of water in a year.
+
+62
+00:03:41,767 --> 00:03:44,850
+Your brain is only about two percent of your body weight,
+
+63
+00:03:44,850 --> 00:03:47,447
+but it uses about twenty percent of your energy.
+
+64
+00:03:47,947 --> 00:03:52,867
+Even at high noon, your green skin would make less power than your brain alone uses.
+
+65
+00:03:55,600 --> 00:03:57,826
+A year in, the small stuff adds up.
+
+66
+00:03:57,826 --> 00:04:01,515
+Anyone working outdoors gets a free snack every sunny day.
+
+67
+00:04:01,515 --> 00:04:04,186
+Sunny countries get more than cloudy ones.
+
+68
+00:04:04,186 --> 00:04:07,175
+And far from the equator, winter would be lean,
+
+69
+00:04:07,175 --> 00:04:09,655
+with the Sun low in the sky for months.
+
+70
+00:04:10,155 --> 00:04:12,408
+Clothes become a strange trade-off.
+
+71
+00:04:12,408 --> 00:04:15,369
+Every shirt is a cover over your solar panels.
+
+72
+00:04:15,369 --> 00:04:18,717
+Summer fashion would get very short, and very green.
+
+73
+00:04:19,217 --> 00:04:23,458
+But photosynthesizing well means lots of sunlight on bare skin.
+
+74
+00:04:23,458 --> 00:04:27,363
+And sunlight carries ultraviolet light, which damages DNA.
+
+75
+00:04:27,363 --> 00:04:32,682
+Plants deal with that every day, using protective pigments and constant repair.
+
+76
+00:04:32,682 --> 00:04:35,577
+Your green skin would need the same tricks.
+
+77
+00:04:36,077 --> 00:04:38,363
+It would also need carbon dioxide.
+
+78
+00:04:38,363 --> 00:04:42,665
+Leaves are covered in tiny pores called stomata that let air in.
+
+79
+00:04:42,665 --> 00:04:45,287
+Your skin would need something similar.
+
+80
+00:04:45,787 --> 00:04:47,825
+And green skin only makes sugar.
+
+81
+00:04:47,825 --> 00:04:52,092
+Plants get nitrogen and minerals from the soil through their roots.
+
+82
+00:04:52,092 --> 00:04:55,849
+You'd still need real food to build proteins, and at night,
+
+83
+00:04:55,849 --> 00:04:58,014
+your skin would simply switch off.
+
+84
+00:04:58,867 --> 00:05:02,673
+To really live on sunlight, you'd have to cut your energy bill.
+
+85
+00:05:02,673 --> 00:05:04,909
+Cold-blooded animals already do that.
+
+86
+00:05:05,409 --> 00:05:10,289
+A resting reptile uses only about a tenth of the energy of a mammal its size,
+
+87
+00:05:10,289 --> 00:05:12,951
+because it doesn't burn fuel to stay warm.
+
+88
+00:05:13,451 --> 00:05:17,115
+So picture a slow, cold-blooded human, basking on a rock.
+
+89
+00:05:17,115 --> 00:05:20,009
+Even then, sunlight-skin wouldn't come close.
+
+90
+00:05:22,767 --> 00:05:24,916
+Now give evolution a million years,
+
+91
+00:05:24,916 --> 00:05:28,478
+and imagine the people who soak up the most light do best.
+
+92
+00:05:28,978 --> 00:05:30,211
+Bodies get flatter.
+
+93
+00:05:30,211 --> 00:05:30,600
+Wider.
+
+94
+00:05:30,600 --> 00:05:31,119
+Thinner.
+
+95
+00:05:31,119 --> 00:05:33,779
+Big flaps of skin spread out like leaves.
+
+96
+00:05:33,779 --> 00:05:35,012
+Less moving around.
+
+97
+00:05:35,012 --> 00:05:35,921
+Less thinking.
+
+98
+00:05:36,421 --> 00:05:39,760
+Push that far enough, and you basically turn into a plant.
+
+99
+00:05:39,760 --> 00:05:41,661
+And plants already won that game.
+
+100
+00:05:41,661 --> 00:05:45,346
+They don't hunt for food, because their food falls from the sky.
+
+101
+00:05:45,846 --> 00:05:49,018
+Funny thing is, some plants went the other way.
+
+102
+00:05:49,018 --> 00:05:53,000
+Rafflesia, which grows one of the biggest flowers on Earth,
+
+103
+00:05:53,000 --> 00:05:55,160
+gave up photosynthesis entirely.
+
+104
+00:05:55,160 --> 00:06:00,763
+It lives as a parasite inside a vine, and may even have lost its chloroplast genes.
+
+105
+00:06:01,600 --> 00:06:03,647
+Except some animals found a middle path.
+
+106
+00:06:04,147 --> 00:06:05,335
+Corals are animals.
+
+107
+00:06:05,335 --> 00:06:12,210
+The tiny algae living inside them can hand over as much as ninety percent of the food they make from sunlight.
+
+108
+00:06:12,210 --> 00:06:16,335
+That's how corals build giant reefs in clear, nutrient-poor water.
+
+109
+00:06:16,335 --> 00:06:19,460
+The Great Barrier Reef, built on that partnership,
+
+110
+00:06:19,460 --> 00:06:22,960
+is the largest structure made by living things on Earth.
+
+111
+00:06:22,960 --> 00:06:24,585
+You can see it from space.
+
+112
+00:06:25,085 --> 00:06:27,619
+The algae also give corals their colors.
+
+113
+00:06:27,619 --> 00:06:30,280
+Lose the algae, and the coral turns white.
+
+114
+00:06:30,280 --> 00:06:31,737
+That's coral bleaching.
+
+115
+00:06:32,600 --> 00:06:35,287
+Giant clams farm algae in their fleshy mantle,
+
+116
+00:06:35,287 --> 00:06:39,375
+which soaks up about ninety-five percent of the sunlight that hits it.
+
+117
+00:06:39,875 --> 00:06:45,087
+And the green hydra, a tiny freshwater animal, keeps algae inside its cells.
+
+118
+00:06:45,087 --> 00:06:46,870
+The algae pay it in sugar.
+
+119
+00:06:46,870 --> 00:06:48,585
+It pays them in nitrogen.
+
+120
+00:06:49,085 --> 00:06:52,173
+There's even a jellyfish that lives upside down.
+
+121
+00:06:52,173 --> 00:06:55,904
+The upside-down jellyfish lies bell-first on the seafloor,
+
+122
+00:06:55,904 --> 00:06:56,869
+arms facing up,
+
+123
+00:06:56,869 --> 00:07:01,179
+so the algae living in those arms get as much sunlight as possible.
+
+124
+00:07:02,033 --> 00:07:04,410
+Then there's a sea slug that steals.
+
+125
+00:07:04,410 --> 00:07:06,325
+Elysia chlorotica eats algae,
+
+126
+00:07:06,325 --> 00:07:10,154
+but keeps their chloroplasts working inside its own cells,
+
+127
+00:07:10,154 --> 00:07:13,191
+and can go nine months or more without eating.
+
+128
+00:07:13,691 --> 00:07:18,894
+A leaf-shaped animal, just a few centimeters long, running on stolen solar panels.
+
+129
+00:07:18,894 --> 00:07:23,526
+Although scientists still argue about how much the sunlight really helps.
+
+130
+00:07:24,026 --> 00:07:26,456
+Some of its relatives are even stranger.
+
+131
+00:07:26,456 --> 00:07:30,587
+They can drop their entire body, and the head grows a whole new one,
+
+132
+00:07:30,587 --> 00:07:32,470
+heart included, in a few weeks.
+
+133
+00:07:33,333 --> 00:07:34,586
+And our salamander?
+
+134
+00:07:34,586 --> 00:07:37,355
+Inside the egg, the algae give off oxygen,
+
+135
+00:07:37,355 --> 00:07:40,849
+and in return they get the embryo's waste to feed on.
+
+136
+00:07:40,849 --> 00:07:43,551
+Eggs with algae hatch earlier and bigger.
+
+137
+00:07:43,551 --> 00:07:47,111
+But once the larvae grow, most of the algae disappear.
+
+138
+00:07:47,611 --> 00:07:52,419
+Even nature's best example uses sunlight as a head start, not a meal plan.
+
+139
+00:07:53,267 --> 00:07:58,044
+So photosynthetic skin would get you a green tint and about a cracker a day.
+
+140
+00:07:58,044 --> 00:07:59,112
+Not a revolution.
+
+141
+00:07:59,112 --> 00:08:00,118
+But not nothing.
+
+142
+00:08:00,118 --> 00:08:03,827
+And it would make you, quite literally, a little bit plant.
+
+143
+00:08:04,327 --> 00:08:07,572
+Would you take green skin for a free snack every sunny day?
+
+144
+00:08:07,572 --> 00:08:08,892
+Tell me in the comments.

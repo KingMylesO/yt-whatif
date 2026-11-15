@@ -1,0 +1,575 @@
+1
+00:00:00,300 --> 00:00:05,624
+Saturn's main rings are more than two hundred and seventy thousand kilometers across.
+
+2
+00:00:05,624 --> 00:00:09,131
+But in most places, they're only about ten meters thick.
+
+3
+00:00:09,631 --> 00:00:13,063
+For their size, that's far thinner than a sheet of paper.
+
+4
+00:00:13,063 --> 00:00:19,565
+And all of that ring material together weighs only about forty percent as much as Saturn's small moon Mimas.
+
+5
+00:00:20,065 --> 00:00:22,323
+Now picture rings like that around Earth.
+
+6
+00:00:22,323 --> 00:00:23,975
+What would your sky look like?
+
+7
+00:00:23,975 --> 00:00:26,619
+And what would they do to the planet underneath?
+
+8
+00:00:30,867 --> 00:00:31,959
+First, the rules.
+
+9
+00:00:31,959 --> 00:00:33,950
+A ring can't sit just anywhere.
+
+10
+00:00:33,950 --> 00:00:35,621
+Get too close to a planet,
+
+11
+00:00:35,621 --> 00:00:41,274
+and its tides pull a moon apart faster than the moon's own gravity can hold it together.
+
+12
+00:00:41,774 --> 00:00:44,250
+That boundary is called the Roche limit.
+
+13
+00:00:44,250 --> 00:00:48,459
+For a rocky moon, it sits roughly three Earth radii from the center.
+
+14
+00:00:48,459 --> 00:00:51,493
+About twelve thousand kilometers above your head.
+
+15
+00:00:51,993 --> 00:00:55,956
+So let's say a small moon drifted inside that line, broke apart,
+
+16
+00:00:55,956 --> 00:00:59,609
+and spread into a flat, glittering disk around the equator.
+
+17
+00:00:59,609 --> 00:01:03,263
+Inside the limit, the pieces can never clump back together.
+
+18
+00:01:04,100 --> 00:01:07,736
+Saturn's rings are about ninety-eight percent water ice,
+
+19
+00:01:07,736 --> 00:01:11,826
+in pieces ranging from tiny grains to chunks as big as a house.
+
+20
+00:01:11,826 --> 00:01:14,033
+That's why they shine so brightly.
+
+21
+00:01:14,533 --> 00:01:16,176
+Ours would be different.
+
+22
+00:01:16,176 --> 00:01:19,529
+This close to the Sun, ice slowly turns to vapor,
+
+23
+00:01:19,529 --> 00:01:22,746
+so Earth's rings would be mostly rock and dust.
+
+24
+00:01:22,746 --> 00:01:23,225
+Darker.
+
+25
+00:01:23,225 --> 00:01:23,704
+Grayer.
+
+26
+00:01:23,704 --> 00:01:24,731
+Still enormous.
+
+27
+00:01:25,231 --> 00:01:29,370
+And the inner edge would have to stay above about a thousand kilometers.
+
+28
+00:01:29,370 --> 00:01:34,142
+Any lower, and the debris drags through the thin upper air and burns up as meteors.
+
+29
+00:01:36,900 --> 00:01:39,452
+On day one, where you live changes everything.
+
+30
+00:01:39,952 --> 00:01:45,104
+Stand on the equator, in a city like Quito, and you're looking at the rings edge-on.
+
+31
+00:01:45,104 --> 00:01:49,642
+A thin, bright line rising from the horizon and running straight overhead.
+
+32
+00:01:50,500 --> 00:01:53,611
+Move north, to somewhere like Washington, D.C.,
+
+33
+00:01:53,611 --> 00:01:57,847
+and the rings open up into a giant arch across the southern sky.
+
+34
+00:01:58,347 --> 00:02:02,158
+Like a rainbow that never fades, never moves, and never sets.
+
+35
+00:02:02,158 --> 00:02:04,908
+You could find south just by looking for it,
+
+36
+00:02:04,908 --> 00:02:08,344
+the way sailors once used the North Star to find north.
+
+37
+00:02:09,200 --> 00:02:13,937
+Go all the way up to the Arctic Circle, and they shrink to a hump on the horizon.
+
+38
+00:02:13,937 --> 00:02:16,452
+At the poles, you wouldn't see them at all.
+
+39
+00:02:17,300 --> 00:02:19,233
+And at night, they don't go dark.
+
+40
+00:02:19,233 --> 00:02:23,920
+Sunlight still hits the parts of the rings outside Earth's shadow, so they glow.
+
+41
+00:02:23,920 --> 00:02:25,384
+This is called ringshine.
+
+42
+00:02:25,884 --> 00:02:27,591
+One astronomer, Caleb Scharf,
+
+43
+00:02:27,591 --> 00:02:32,595
+worked out that if the rings reflected just ten percent of the sunlight hitting them,
+
+44
+00:02:32,595 --> 00:02:36,893
+every square meter would shine like a hundred-and-thirty-watt light bulb.
+
+45
+00:02:37,393 --> 00:02:38,667
+Nights get brighter.
+
+46
+00:02:38,667 --> 00:02:40,515
+Stargazing gets a lot harder.
+
+47
+00:02:40,515 --> 00:02:45,422
+And every night, Earth's own shadow cuts a black gap across the glowing arch.
+
+48
+00:02:48,167 --> 00:02:51,404
+Over a full year, the rings start doing something sneaky.
+
+49
+00:02:51,404 --> 00:02:52,427
+They cast shadows.
+
+50
+00:02:52,927 --> 00:02:55,780
+Earth is tilted, so the rings are tilted too.
+
+51
+00:02:55,780 --> 00:03:00,218
+In northern summer, their shadow falls across the Southern Hemisphere.
+
+52
+00:03:00,218 --> 00:03:02,311
+Six months later, it swaps sides.
+
+53
+00:03:02,811 --> 00:03:04,823
+Notice which half gets the shade:
+
+54
+00:03:04,823 --> 00:03:06,652
+the one already having winter.
+
+55
+00:03:06,652 --> 00:03:09,578
+Less sunlight, in the season that has the least.
+
+56
+00:03:09,578 --> 00:03:12,200
+Winters there could get colder and harsher.
+
+57
+00:03:13,067 --> 00:03:17,519
+Twice a year, at the equinoxes, the Sun lines up with the ring plane itself.
+
+58
+00:03:18,019 --> 00:03:21,433
+From the equator, the rings would seem to slice the Sun in half.
+
+59
+00:03:21,933 --> 00:03:27,284
+On those days, the ring's shadow shrinks to a thin stripe right along the equator.
+
+60
+00:03:27,284 --> 00:03:32,245
+Then, as the seasons turn, it slowly widens again over the other hemisphere.
+
+61
+00:03:33,100 --> 00:03:39,008
+Scientists at Sandia National Laboratories actually modeled an Earth with an equatorial ring.
+
+62
+00:03:39,008 --> 00:03:42,820
+They found it would mostly shade the tropics and subtropics,
+
+63
+00:03:42,820 --> 00:03:46,377
+bouncing a big share of tropical sunlight back to space.
+
+64
+00:03:46,877 --> 00:03:48,569
+Their conclusion was striking:
+
+65
+00:03:48,569 --> 00:03:52,460
+shading like that might be enough to help push Earth into an ice age.
+
+66
+00:03:53,300 --> 00:03:54,983
+Then there's space traffic.
+
+67
+00:03:54,983 --> 00:03:59,472
+The International Space Station orbits about four hundred kilometers up.
+
+68
+00:03:59,472 --> 00:04:00,905
+That's below the rings.
+
+69
+00:04:00,905 --> 00:04:01,217
+Fine.
+
+70
+00:04:01,717 --> 00:04:05,868
+GPS satellites orbit at about twenty thousand kilometers,
+
+71
+00:04:05,868 --> 00:04:12,640
+and the geostationary satellites that carry TV and weather data sit near thirty-six thousand.
+
+72
+00:04:12,640 --> 00:04:13,805
+Above the rings.
+
+73
+00:04:13,805 --> 00:04:14,533
+Also fine.
+
+74
+00:04:15,033 --> 00:04:20,351
+But anything orbiting along the equator in between would be flying through a shooting gallery.
+
+75
+00:04:20,351 --> 00:04:25,387
+And radio signals from satellites near the equator would have to pass through the debris.
+
+76
+00:04:25,887 --> 00:04:30,025
+Rockets heading for high orbits would probably launch far from the equator,
+
+77
+00:04:30,025 --> 00:04:33,281
+and climb over the ring plane rather than punch through it.
+
+78
+00:04:36,033 --> 00:04:38,706
+Give it a thousand years, and people adapt.
+
+79
+00:04:38,706 --> 00:04:42,001
+Unlike the Moon, the rings never move across the sky.
+
+80
+00:04:42,001 --> 00:04:43,803
+They're a permanent landmark.
+
+81
+00:04:44,303 --> 00:04:47,970
+The farther you are from the equator, the lower the arch sits.
+
+82
+00:04:47,970 --> 00:04:52,169
+So a sailor could estimate their latitude just by measuring its height.
+
+83
+00:04:52,669 --> 00:04:55,519
+Every culture would grow up under the rings.
+
+84
+00:04:55,519 --> 00:04:56,491
+Ring calendars.
+
+85
+00:04:56,491 --> 00:04:57,204
+Ring myths.
+
+86
+00:04:57,204 --> 00:04:59,276
+Maybe even ring-shadow sundials.
+
+87
+00:04:59,776 --> 00:05:01,644
+Even the night would keep time.
+
+88
+00:05:01,644 --> 00:05:05,742
+Earth's shadow would slide along the glowing arch from dusk to dawn,
+
+89
+00:05:05,742 --> 00:05:07,610
+like the hand of a giant clock.
+
+90
+00:05:08,467 --> 00:05:10,874
+Astronomers, though, would not be fans.
+
+91
+00:05:10,874 --> 00:05:12,355
+From much of the planet,
+
+92
+00:05:12,355 --> 00:05:16,799
+a stripe of the sky is permanently hidden behind a wall of glowing rock.
+
+93
+00:05:17,299 --> 00:05:20,722
+And every telescope pointed near that stripe is fighting ringshine.
+
+94
+00:05:23,467 --> 00:05:25,405
+But rings don't last forever.
+
+95
+00:05:25,405 --> 00:05:28,146
+Collisions grind the particles into dust.
+
+96
+00:05:28,146 --> 00:05:30,686
+Some slowly spiral inward and burn up,
+
+97
+00:05:30,686 --> 00:05:34,229
+a steady drizzle of shooting stars along the equator.
+
+98
+00:05:34,729 --> 00:05:36,585
+Our big Moon doesn't help either.
+
+99
+00:05:36,585 --> 00:05:38,723
+Its gravity keeps tugging on the ring,
+
+100
+00:05:38,723 --> 00:05:42,324
+and Scharf thinks that would make long-lived rings hard to keep.
+
+101
+00:05:43,167 --> 00:05:45,264
+Even Saturn's rings are temporary.
+
+102
+00:05:45,264 --> 00:05:52,790
+NASA says ice from the rings is raining down into the planet fast enough to fill an Olympic swimming pool every half hour.
+
+103
+00:05:53,290 --> 00:05:57,407
+By NASA's estimate, they could be gone in less than a hundred million years.
+
+104
+00:05:57,907 --> 00:06:02,290
+So Earth's rings would probably fade within a few tens of millions of years.
+
+105
+00:06:02,290 --> 00:06:05,289
+Which brings us to the strangest part of this story.
+
+106
+00:06:06,133 --> 00:06:07,735
+This might have actually happened.
+
+107
+00:06:08,235 --> 00:06:08,813
+In 2024,
+
+108
+00:06:08,813 --> 00:06:15,383
+geologists at Monash University in Australia studied twenty-one impact craters from a time,
+
+109
+00:06:15,383 --> 00:06:19,065
+about four hundred and sixty-six million years ago,
+
+110
+00:06:19,065 --> 00:06:22,025
+when Earth was being hit unusually often.
+
+111
+00:06:22,525 --> 00:06:27,276
+Every single one of them formed within about thirty degrees of the equator of the time.
+
+112
+00:06:27,776 --> 00:06:28,559
+That's weird.
+
+113
+00:06:28,559 --> 00:06:34,338
+About seventy percent of the land that could have preserved those craters sat outside that band.
+
+114
+00:06:34,338 --> 00:06:36,565
+The odds of that happening by chance?
+
+115
+00:06:36,565 --> 00:06:38,672
+Roughly one in twenty-five million.
+
+116
+00:06:39,533 --> 00:06:40,733
+Their explanation:
+
+117
+00:06:40,733 --> 00:06:45,199
+a large asteroid passed inside Earth's Roche limit, was torn apart,
+
+118
+00:06:45,199 --> 00:06:46,398
+and formed a ring.
+
+119
+00:06:46,898 --> 00:06:51,032
+Then, over millions of years, chunks from that ring fell to the ground,
+
+120
+00:06:51,032 --> 00:06:52,429
+mostly near the equator.
+
+121
+00:06:53,267 --> 00:06:57,574
+Not long after, Earth cooled, and slid into the Hirnantian ice age,
+
+122
+00:06:57,574 --> 00:07:01,561
+one of the coldest stretches of the last half a billion years.
+
+123
+00:07:02,061 --> 00:07:05,086
+The team thinks the ring's shadow may have helped.
+
+124
+00:07:05,086 --> 00:07:08,293
+But they're careful to say it's an idea, not a proof.
+
+125
+00:07:08,293 --> 00:07:12,650
+Nobody knows yet how big that ring was, or how much sunlight it blocked.
+
+126
+00:07:13,500 --> 00:07:16,711
+Earth may have had a disk of debris once before, too.
+
+127
+00:07:16,711 --> 00:07:22,285
+Most scientists think our Moon formed after a Mars-sized world slammed into the young Earth,
+
+128
+00:07:22,285 --> 00:07:24,709
+about four and a half billion years ago.
+
+129
+00:07:25,209 --> 00:07:27,403
+In the classic version of that story,
+
+130
+00:07:27,403 --> 00:07:30,071
+the wreckage spread into a ring around Earth,
+
+131
+00:07:30,071 --> 00:07:32,621
+and the ring gathered itself into the Moon.
+
+132
+00:07:32,621 --> 00:07:35,052
+That Moon is still drifting away from us,
+
+133
+00:07:35,052 --> 00:07:37,839
+about three point eight centimeters every year.
+
+134
+00:07:38,700 --> 00:07:40,812
+And rings are common out there.
+
+135
+00:07:40,812 --> 00:07:44,218
+Jupiter, Saturn, Uranus and Neptune all have them.
+
+136
+00:07:44,218 --> 00:07:49,532
+Even the dwarf planet Haumea and a small icy world called Chariklo have rings.
+
+137
+00:07:50,032 --> 00:07:51,458
+Mars may get one next.
+
+138
+00:07:51,458 --> 00:07:55,996
+Its moon Phobos is spiraling inward by about two meters every century,
+
+139
+00:07:55,996 --> 00:07:59,691
+and could be torn apart in thirty to fifty million years.
+
+140
+00:08:00,533 --> 00:08:04,149
+So the next time you look up at a plain, empty sky, remember:
+
+141
+00:08:04,149 --> 00:08:06,283
+it might not always have been empty.
+
+142
+00:08:06,783 --> 00:08:09,968
+If Earth got rings tomorrow, where would you want to live?
+
+143
+00:08:09,968 --> 00:08:11,835
+Under the arch, or under the line?
+
+144
+00:08:11,835 --> 00:08:13,153
+Tell me in the comments.

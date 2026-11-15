@@ -17,7 +17,11 @@ def tts_to_text(s):
            "twenty twenty-four": "2024", "twenty twenty-five": "2025", "twenty twenty-two": "2022", "twenty twenty": "2020",
            "twenty seventeen": "2017", "twenty sixteen": "2016", "twenty twelve": "2012", "nineteen seventy": "1970",
            "twenty-one hundred": "2100"}
-    for a, b in rep.items(): s = s.replace(a, b)
+    rep.update({"Rosh": "Roche", "La-shom": "Laschamp", "Her-nan-tee-an": "Hirnantian", "Eh-liz-ee-uh klor-ot-ih-kuh": "Elysia chlorotica",
+                "Caleb Sharf": "Caleb Scharf", "Sharf": "Scharf", "cow-ree": "kauri", "stoh-mah-tuh": "stomata", "Maven": "MAVEN",
+                "twenty twenty-six": "2026", "eighteen fifty-nine": "1859", "eighteen thirty-one": "1831", "nineteen eighty-nine": "1989",
+                "twenty eighteen": "2018", "twenty fourteen": "2014"})
+    for a in sorted(rep, key=len, reverse=True): s = s.replace(a, rep[a])
     return s
 
 def srt(name, path):
