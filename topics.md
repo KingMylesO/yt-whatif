@@ -15,6 +15,12 @@
 - What If Earth's Magnetic Field Switched Off? (long) — Shorts: What If Earth's Shield Switched Off?; What If the Magnetic Poles Flipped Tomorrow?; What If There Were No Clouds for a Week?
 - What If Humans Could Photosynthesize? (long) — Shorts: What If Your Skin Could Eat Sunlight?; This Sea Slug Runs on Stolen Sunlight; What If You Had a Mantis Shrimp's Eyes?
 
+## Batch 04 (2026-11-17, tech) - in progress
+One-off tech batch (transistors, chips, semiconductors, computer hardware). Planned:
+- What If the Transistor Was Never Invented? (long) — Shorts: What If Your Phone Ran on Vacuum Tubes?; The First Computer Bug Was a Real Moth; What If Every Chip on Earth Stopped at Once?
+- What If You Shrank Down Inside a Computer Chip? (long) — Shorts: What If You Shrank Inside a Chip?; How Chips Are Printed With Tin Plasma (EUV); What If Moore's Law Never Slowed Down?
+- What If a Cosmic Ray Flipped a Bit in Your Computer? (long) — Shorts: What If a Cosmic Ray Hit Your Computer?; The Election Glitch That Added 4,096 Votes
+
 # Backlog (owner's ideas, use first)
 Space: the Moon disappeared · Earth stopped spinning · falling into Jupiter · a rogue planet enters the Solar System · a moon with its own moon ("moonmoons") · Earth orbiting two suns · a day longer than a year, like Venus · Pluto replacing our Moon · Earth inside a nebula
 Earth: all the ice melted · it never stopped raining · every volcano erupted at once · oceans twice as deep · every ant disappeared · a fast-spinning early Earth with few-hour days
