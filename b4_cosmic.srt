@@ -1,0 +1,583 @@
+1
+00:00:00,300 --> 00:00:04,313
+On May eighteenth, 2003, in the Belgian town of Schaerbeek,
+
+2
+00:00:04,313 --> 00:00:10,366
+an electronic voting machine gave one candidate four thousand and ninety-six extra votes.
+
+3
+00:00:10,866 --> 00:00:14,620
+It wasn't a hacker, and investigators found no software bug.
+
+4
+00:00:14,620 --> 00:00:21,439
+The leading explanation is a particle from space that struck the machine's memory and flipped one single bit.
+
+5
+00:00:21,939 --> 00:00:25,494
+So what happens when a cosmic ray flips a bit in your computer?
+
+6
+00:00:29,733 --> 00:00:31,748
+First, the rules of the game.
+
+7
+00:00:31,748 --> 00:00:35,151
+Everything your computer knows is stored as bits.
+
+8
+00:00:35,151 --> 00:00:36,193
+Ones and zeros.
+
+9
+00:00:36,193 --> 00:00:39,735
+A photo, a bank balance, the score in a video game.
+
+10
+00:00:39,735 --> 00:00:40,360
+All bits.
+
+11
+00:00:40,860 --> 00:00:46,455
+In the main memory of your computer, each bit is a tiny bucket of electric charge.
+
+12
+00:00:46,455 --> 00:00:47,410
+Full is a one.
+
+13
+00:00:47,410 --> 00:00:48,501
+Empty is a zero.
+
+14
+00:00:49,001 --> 00:00:50,721
+And modern buckets are tiny.
+
+15
+00:00:50,721 --> 00:00:52,994
+It doesn't take much to tip one over.
+
+16
+00:00:53,833 --> 00:00:55,274
+Bits also have values.
+
+17
+00:00:55,274 --> 00:00:58,351
+In a binary number, the first bit is worth one.
+
+18
+00:00:58,351 --> 00:01:02,934
+The next is worth two, then four, eight, sixteen, doubling every time.
+
+19
+00:01:03,434 --> 00:01:06,333
+So flipping a low bit barely changes a number.
+
+20
+00:01:06,333 --> 00:01:10,176
+But the thirteenth bit is worth four thousand and ninety-six.
+
+21
+00:01:10,176 --> 00:01:11,499
+Remember that number.
+
+22
+00:01:14,233 --> 00:01:16,337
+So where does the hit come from?
+
+23
+00:01:16,337 --> 00:01:19,559
+Cosmic rays are mostly protons and atomic nuclei,
+
+24
+00:01:19,559 --> 00:01:23,110
+racing across the galaxy at nearly the speed of light.
+
+25
+00:01:23,110 --> 00:01:26,529
+Many are thought to be flung out by exploding stars.
+
+26
+00:01:27,029 --> 00:01:29,834
+When one slams into the top of our atmosphere,
+
+27
+00:01:29,834 --> 00:01:32,577
+it shatters into a shower of other particles,
+
+28
+00:01:32,577 --> 00:01:35,259
+spreading out as it rains toward the ground.
+
+29
+00:01:35,759 --> 00:01:37,657
+They were discovered in 1912,
+
+30
+00:01:37,657 --> 00:01:42,566
+when the physicist Victor Hess carried radiation detectors up in a balloon,
+
+31
+00:01:42,566 --> 00:01:44,595
+more than five kilometers high,
+
+32
+00:01:44,595 --> 00:01:48,260
+and found the radiation got stronger the higher he went.
+
+33
+00:01:48,260 --> 00:01:48,980
+Not weaker.
+
+34
+00:01:48,980 --> 00:01:50,616
+It was coming from space.
+
+35
+00:01:51,116 --> 00:01:54,417
+The most energetic one ever recorded, in 1991,
+
+36
+00:01:54,417 --> 00:02:00,444
+carried as much energy as a baseball thrown at about ninety-five kilometers an hour.
+
+37
+00:02:00,444 --> 00:02:04,391
+All packed into a single particle smaller than an atom.
+
+38
+00:02:04,391 --> 00:02:07,763
+Scientists nicknamed it the Oh-My-God particle.
+
+39
+00:02:08,263 --> 00:02:08,864
+Right now,
+
+40
+00:02:08,864 --> 00:02:13,671
+about one muon from those showers passes through every square centimeter of you,
+
+41
+00:02:13,671 --> 00:02:14,452
+every minute.
+
+42
+00:02:14,452 --> 00:02:17,215
+Through your body, your phone and your laptop.
+
+43
+00:02:18,067 --> 00:02:19,635
+But for chips on the ground,
+
+44
+00:02:19,635 --> 00:02:22,883
+the main troublemakers are neutrons from the same showers.
+
+45
+00:02:23,383 --> 00:02:25,797
+And the higher you go, the worse it gets.
+
+46
+00:02:25,797 --> 00:02:27,975
+At the height where airliners cruise,
+
+47
+00:02:27,975 --> 00:02:32,273
+the neutron flux is about three hundred times stronger than at sea level.
+
+48
+00:02:32,773 --> 00:02:38,084
+That's why the computers that fly airliners have to be designed with these hits in mind.
+
+49
+00:02:38,084 --> 00:02:43,757
+And it's why a computer in a mountain town gets hit more often than the same one at the beach.
+
+50
+00:02:46,500 --> 00:02:48,966
+When a particle hits a chip just right,
+
+51
+00:02:48,966 --> 00:02:52,570
+it leaves a thin trail of electric charge in the silicon.
+
+52
+00:02:52,570 --> 00:02:57,059
+If that trail lands next to a memory cell, it can fill an empty bucket,
+
+53
+00:02:57,059 --> 00:02:58,324
+or drain a full one.
+
+54
+00:02:58,824 --> 00:03:00,276
+A zero becomes a one.
+
+55
+00:03:00,276 --> 00:03:04,149
+Engineers call it a soft error, or a single-event upset.
+
+56
+00:03:04,149 --> 00:03:05,394
+Nothing is broken.
+
+57
+00:03:05,394 --> 00:03:09,129
+The memory just remembers something it was never told.
+
+58
+00:03:09,629 --> 00:03:12,112
+Most of the time, you'd never notice.
+
+59
+00:03:12,112 --> 00:03:15,199
+The flipped bit sits in memory nobody's using,
+
+60
+00:03:15,199 --> 00:03:17,749
+or it gets overwritten a moment later.
+
+61
+00:03:17,749 --> 00:03:19,628
+Sometimes a program crashes.
+
+62
+00:03:19,628 --> 00:03:22,312
+And sometimes, a number quietly changes.
+
+63
+00:03:22,812 --> 00:03:26,956
+And a single particle can even flip several neighboring bits at once.
+
+64
+00:03:26,956 --> 00:03:28,638
+That's much harder to catch,
+
+65
+00:03:28,638 --> 00:03:32,121
+because many protection schemes are built to fix just one.
+
+66
+00:03:34,867 --> 00:03:35,892
+Back to Belgium.
+
+67
+00:03:35,892 --> 00:03:40,891
+Officials noticed that the candidate's total didn't add up, so they recounted.
+
+68
+00:03:40,891 --> 00:03:44,352
+The four thousand and ninety-six extra votes vanished.
+
+69
+00:03:44,852 --> 00:03:48,580
+Four thousand and ninety-six is two to the twelfth power,
+
+70
+00:03:48,580 --> 00:03:50,739
+the value of that thirteenth bit.
+
+71
+00:03:50,739 --> 00:03:53,290
+Exactly what one flipped bit would add.
+
+72
+00:03:53,290 --> 00:03:56,102
+After ruling out fraud and software errors,
+
+73
+00:03:56,102 --> 00:04:00,747
+investigators concluded a single-event upset was the most likely cause.
+
+74
+00:04:01,600 --> 00:04:03,439
+Out in space, it's far worse.
+
+75
+00:04:03,439 --> 00:04:06,484
+Over a region called the South Atlantic Anomaly,
+
+76
+00:04:06,484 --> 00:04:09,528
+Earth's radiation belts dip close to the planet.
+
+77
+00:04:09,528 --> 00:04:13,778
+The Hubble Space Telescope passes through it on many of its orbits,
+
+78
+00:04:13,778 --> 00:04:17,330
+and doesn't take science observations while it's inside.
+
+79
+00:04:17,830 --> 00:04:20,083
+In 2010, the Voyager 2 spacecraft,
+
+80
+00:04:20,083 --> 00:04:23,329
+more than thirteen billion kilometers from Earth,
+
+81
+00:04:23,329 --> 00:04:25,979
+suddenly started sending home gibberish.
+
+82
+00:04:26,479 --> 00:04:32,304
+Engineers traced it to a single bit in its data computer that had flipped from a zero to a one.
+
+83
+00:04:32,304 --> 00:04:36,413
+They sent a command to flip it back, and Voyager went back to work.
+
+84
+00:04:36,913 --> 00:04:39,096
+Nobody can prove what flipped it.
+
+85
+00:04:39,096 --> 00:04:42,138
+But out there, radiation is the usual suspect.
+
+86
+00:04:43,000 --> 00:04:46,859
+And in 2013, during a livestream of Super Mario 64,
+
+87
+00:04:46,859 --> 00:04:50,945
+a player's Mario suddenly shot up onto a higher floor,
+
+88
+00:04:50,945 --> 00:04:55,106
+a jump nobody has been able to repeat in a normal game.
+
+89
+00:04:55,606 --> 00:04:56,697
+A popular theory:
+
+90
+00:04:56,697 --> 00:04:59,584
+a single bit in Mario's height value flipped.
+
+91
+00:04:59,584 --> 00:05:03,049
+It's never been proven, and fans still argue about it.
+
+92
+00:05:03,900 --> 00:05:07,123
+The first chip culprits weren't even from space.
+
+93
+00:05:07,123 --> 00:05:07,660
+In 1978,
+
+94
+00:05:07,660 --> 00:05:14,441
+Intel engineers Timothy May and Murray Woods found that memory chips were flipping bits on their own.
+
+95
+00:05:14,941 --> 00:05:15,626
+The cause:
+
+96
+00:05:15,626 --> 00:05:19,943
+tiny traces of uranium and thorium in the chips' own packaging,
+
+97
+00:05:19,943 --> 00:05:21,793
+giving off alpha particles.
+
+98
+00:05:21,793 --> 00:05:25,014
+Chip makers had to start using purer materials.
+
+99
+00:05:25,867 --> 00:05:29,828
+Bit flips can even send your computer to the wrong website.
+
+100
+00:05:29,828 --> 00:05:30,365
+In 2011,
+
+101
+00:05:30,365 --> 00:05:37,617
+security researcher Artem Dinaburg registered web addresses that were exactly one bit away from famous ones.
+
+102
+00:05:38,117 --> 00:05:39,490
+Over about seven months,
+
+103
+00:05:39,490 --> 00:05:42,465
+they received more than fifty-two thousand requests,
+
+104
+00:05:42,465 --> 00:05:46,012
+from computers that had flipped a bit somewhere along the way.
+
+105
+00:05:48,767 --> 00:05:50,922
+So how often does this happen?
+
+106
+00:05:50,922 --> 00:05:51,856
+In the 1990s,
+
+107
+00:05:51,856 --> 00:05:59,686
+IBM estimated roughly one cosmic-ray error per month for every two hundred and fifty-six megabytes of memory.
+
+108
+00:05:59,686 --> 00:06:02,201
+Other estimates came out far lower.
+
+109
+00:06:02,701 --> 00:06:03,240
+In 2009,
+
+110
+00:06:03,240 --> 00:06:10,716
+a study of Google's servers found that more than eight percent of memory modules had at least one error a year.
+
+111
+00:06:10,716 --> 00:06:16,375
+But the researchers argued that many came from worn or faulty chips, not from space.
+
+112
+00:06:16,875 --> 00:06:17,711
+And in 2026,
+
+113
+00:06:17,711 --> 00:06:24,052
+a Mozilla engineer estimated that roughly one in ten Firefox crashes looked like bit flips,
+
+114
+00:06:24,052 --> 00:06:26,003
+most likely from bad memory.
+
+115
+00:06:26,003 --> 00:06:31,159
+So sometimes, when software crashes, it really isn't the software's fault.
+
+116
+00:06:33,900 --> 00:06:36,858
+So why doesn't your computer go haywire every day?
+
+117
+00:06:36,858 --> 00:06:38,573
+Because engineers fight back.
+
+118
+00:06:39,073 --> 00:06:39,612
+In 1950,
+
+119
+00:06:39,612 --> 00:06:46,887
+Richard Hamming at Bell Labs got fed up with a relay computer that kept stopping on errors over the weekend,
+
+120
+00:06:46,887 --> 00:06:48,032
+wasting his work.
+
+121
+00:06:48,032 --> 00:06:50,592
+So he invented error-correcting codes.
+
+122
+00:06:51,092 --> 00:06:51,667
+The idea:
+
+123
+00:06:51,667 --> 00:06:54,794
+store a few extra check bits alongside your data.
+
+124
+00:06:54,794 --> 00:06:59,518
+If one bit flips, the check bits can tell you which one, and flip it back.
+
+125
+00:07:00,367 --> 00:07:02,507
+Servers use this in ECC memory.
+
+126
+00:07:02,507 --> 00:07:04,371
+Spacecraft go even further.
+
+127
+00:07:04,371 --> 00:07:10,791
+The Cassini probe's data recorders stored seven check bits for every thirty-two bits of data,
+
+128
+00:07:10,791 --> 00:07:14,796
+and swept their memory clean of errors every nine minutes.
+
+129
+00:07:15,296 --> 00:07:20,212
+Some systems simply run the same computer several times over and let them vote.
+
+130
+00:07:20,212 --> 00:07:23,199
+The Space Shuttle flew with five main computers,
+
+131
+00:07:23,199 --> 00:07:26,995
+four of them running the same software and comparing answers.
+
+132
+00:07:27,833 --> 00:07:29,147
+And here's the twist.
+
+133
+00:07:29,147 --> 00:07:31,400
+Those same cosmic rays help us, too.
+
+134
+00:07:31,900 --> 00:07:36,112
+Chip makers test their hardware by firing beams of neutrons at it,
+
+135
+00:07:36,112 --> 00:07:39,367
+cramming years of cosmic-ray hits into a few hours.
+
+136
+00:07:39,867 --> 00:07:44,599
+And in 2017, scientists used muons from cosmic rays like an X-ray,
+
+137
+00:07:44,599 --> 00:07:47,539
+to look inside the Great Pyramid of Giza.
+
+138
+00:07:47,539 --> 00:07:52,271
+They found a huge hidden empty space, at least thirty meters long,
+
+139
+00:07:52,271 --> 00:07:54,207
+that nobody knew was there.
+
+140
+00:07:55,067 --> 00:07:57,055
+So right now, as you watch this,
+
+141
+00:07:57,055 --> 00:08:01,466
+particles from distant exploding stars are passing through your screen.
+
+142
+00:08:01,466 --> 00:08:02,957
+Almost all of them miss.
+
+143
+00:08:02,957 --> 00:08:06,249
+And when one doesn't, your computer quietly fixes it.
+
+144
+00:08:06,249 --> 00:08:08,859
+Or it crashes, and you blame the software.
+
+145
+00:08:09,359 --> 00:08:12,837
+Have you ever had a glitch so weird it might have been a cosmic ray?
+
+146
+00:08:12,837 --> 00:08:14,065
+Tell me in the comments.
