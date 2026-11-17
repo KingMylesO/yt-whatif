@@ -51,6 +51,13 @@ PRESETS = {
     "photo_s": dict(chords=[[48, 55, 60, 64], [53, 57, 60, 65], [45, 52, 57, 60], [50, 55, 59, 62]], bar=4.0, step=0.25, bright=0.9),
     "sky_s": dict(chords=[[50, 57, 62, 66], [47, 54, 59, 62], [43, 50, 55, 59], [45, 52, 57, 61]], bar=4.0, step=0.25, bright=0.8),
     "reef_s": dict(chords=[[52, 59, 64, 68], [49, 56, 61, 64], [45, 52, 57, 61], [47, 54, 59, 63]], bar=4.0, step=0.25, bright=0.9),
+    # batch 04 (tech)
+    "tubes": dict(chords=[[50, 57, 60, 65], [46, 53, 58, 62], [48, 55, 58, 64], [45, 52, 57, 61]], bar=8.0, step=0.5, bright=0.45),
+    "tubes_s": dict(chords=[[50, 57, 60, 65], [46, 53, 58, 62], [48, 55, 58, 64], [45, 52, 57, 61]], bar=4.0, step=0.25, bright=0.75),
+    "chip": dict(chords=[[52, 59, 64, 71], [48, 55, 64, 67], [55, 62, 66, 71], [50, 57, 62, 69]], bar=6.0, step=0.25, bright=1.0),
+    "chip_s": dict(chords=[[52, 59, 64, 71], [48, 55, 64, 67], [55, 62, 66, 71], [50, 57, 62, 69]], bar=3.0, step=0.1875, bright=1.0),
+    "cosmic": dict(chords=[[44, 51, 56, 59], [40, 47, 52, 56], [42, 49, 54, 57], [39, 46, 51, 54]], bar=8.0, step=0.5, bright=0.7),
+    "cosmic_s": dict(chords=[[44, 51, 56, 59], [40, 47, 52, 56], [42, 49, 54, 57], [39, 46, 51, 54]], bar=4.0, step=0.25, bright=0.9),
 }
 PRESET_FOR = {"long": "space", "short_sun": "short", "short_sleep": "sleep",
               "b2_trees": "forest", "b2_asteroid": "space", "b2_med": "sea",
@@ -178,6 +185,13 @@ def _music_map():
         m.update(getattr(importlib.import_module(os.path.basename(p)[:-3]), "MUSIC", {}))
     return m
 
+def _movavg_same(a, k):
+    """Same result as np.convolve(a, np.ones(k)/k, mode="same"), in O(n) instead of O(n*k)."""
+    n = len(a); c = np.concatenate([[0.0], np.cumsum(a)])
+    m = np.arange(n) + (k - 1) // 2          # index into the 'full' convolution
+    hi = np.minimum(m, n - 1) + 1; lo = np.maximum(m - k + 1, 0)
+    return (c[hi] - c[lo]) / k
+
 def mix(name):
     tl = json.load(open(f"{B}/{name}/timeline.json")); T = tl["total"]; n = int(T * SR)
     voice, _ = sf.read(f"{B}/{name}/voice.wav", dtype="float64")
@@ -189,7 +203,7 @@ def mix(name):
     m /= np.max(np.abs(m)) + 1e-9
     # duck under narration
     k = int(0.25 * SR)
-    env = np.convolve(np.abs(voice), np.ones(k) / k, mode="same"); env /= np.percentile(env, 99) + 1e-9
+    env = _movavg_same(np.abs(voice), k); env /= np.percentile(env, 99) + 1e-9
     duck = 1 - 0.45 * np.clip(env * 3, 0, 1)
     mlev = 0.16 if not name.startswith("short") else 0.2
     out = np.zeros((n, 2))

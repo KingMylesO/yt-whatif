@@ -1,0 +1,59 @@
+1
+00:00:00,150 --> 00:00:00,734
+In 2003,
+
+2
+00:00:00,734 --> 00:00:07,159
+a voting machine in Belgium gave one candidate four thousand and ninety-six extra votes.
+
+3
+00:00:07,650 --> 00:00:10,477
+The total didn't add up, so officials recounted.
+
+4
+00:00:10,477 --> 00:00:11,949
+The extra votes vanished.
+
+5
+00:00:12,450 --> 00:00:15,464
+Investigators ruled out fraud and software bugs.
+
+6
+00:00:15,464 --> 00:00:16,971
+The leading explanation:
+
+7
+00:00:16,971 --> 00:00:19,734
+one bit in the machine's memory had flipped.
+
+8
+00:00:20,250 --> 00:00:21,559
+Here's the giveaway.
+
+9
+00:00:21,559 --> 00:00:24,896
+In binary, each bit is worth double the one before.
+
+10
+00:00:24,896 --> 00:00:26,336
+One, two, four, eight.
+
+11
+00:00:26,336 --> 00:00:30,589
+The thirteenth bit is worth exactly four thousand and ninety-six.
+
+12
+00:00:31,083 --> 00:00:32,132
+What flips a bit?
+
+13
+00:00:32,132 --> 00:00:36,572
+Very often, a particle from a cosmic-ray shower, crashing into the chip.
+
+14
+00:00:37,083 --> 00:00:39,684
+What else can a cosmic ray do to your computer?
+
+15
+00:00:39,684 --> 00:00:41,122
+Full story on the channel.

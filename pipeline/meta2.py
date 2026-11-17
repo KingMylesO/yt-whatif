@@ -21,6 +21,17 @@ def tts_to_text(s):
                 "Caleb Sharf": "Caleb Scharf", "Sharf": "Scharf", "cow-ree": "kauri", "stoh-mah-tuh": "stomata", "Maven": "MAVEN",
                 "twenty twenty-six": "2026", "eighteen fifty-nine": "1859", "eighteen thirty-one": "1831", "nineteen eighty-nine": "1989",
                 "twenty eighteen": "2018", "twenty fourteen": "2014"})
+    rep.update({"Eh-nee-ack": "ENIAC", "A seventeen Pro": "A17 Pro", "M three Max": "M3 Max", "Lilly-en-feld": "Lilienfeld", "Dawon Kong": "Dawon Kahng",
+                "moss-fet": "MOSFET", "Skar-bake": "Schaerbeek", "A-S-M-L": "ASML", "E-C-C": "ECC", "A-I": "AI", "Mark Two": "Mark II",
+                "Voyager Two": "Voyager 2", "Super Mario sixty-four": "Super Mario 64", "UNIVAC One": "UNIVAC I", "MiG twenty-five": "MiG-25",
+                "World War Two": "World War II", "nineteen-oh-six": "1906", "nineteen twelve": "1912", "nineteen twenty-five": "1925",
+                "nineteen forty-six": "1946", "nineteen forty-seven": "1947", "nineteen fifty-three": "1953", "nineteen fifty-four": "1954",
+                "nineteen fifty-nine": "1959", "nineteen fifty": "1950", "nineteen sixty-five": "1965", "nineteen seventy-five": "1975",
+                "nineteen seventy-six": "1976", "nineteen seventy-eight": "1978", "nineteen ninety-one": "1991", "nineteen ninety-seven": "1997",
+                "eighteen seventy-eight": "1878", "nineteen-forties": "1940s", "nineteen-fifties": "1950s", "nineteen-sixties": "1960s",
+                "nineteen-seventies": "1970s", "nineteen-nineties": "1990s", "mid two-thousands": "mid-2000s", "early two-thousands": "early 2000s",
+                "two thousand one": "2001", "two thousand three": "2003", "two thousand nine": "2009", "twenty ten": "2010", "twenty eleven": "2011",
+                "twenty thirteen": "2013", "twenty seventeen": "2017", "twenty twenty-one": "2021"})
     for a in sorted(rep, key=len, reverse=True): s = s.replace(a, rep[a])
     return s
 

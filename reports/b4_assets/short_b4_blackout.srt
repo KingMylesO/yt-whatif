@@ -1,0 +1,63 @@
+1
+00:00:00,150 --> 00:00:02,925
+What if every chip on Earth stopped working, all at once?
+
+2
+00:00:03,417 --> 00:00:04,865
+Phones die instantly.
+
+3
+00:00:04,865 --> 00:00:08,798
+So do laptops, the internet, card payments, and most TVs.
+
+4
+00:00:09,283 --> 00:00:12,734
+Modern cars are full of chips, so most won't start.
+
+5
+00:00:12,734 --> 00:00:13,275
+In 2021,
+
+6
+00:00:13,275 --> 00:00:19,431
+just a shortage of chips cost carmakers about two hundred and ten billion dollars in sales.
+
+7
+00:00:19,917 --> 00:00:24,240
+Power grids, water pumps and traffic lights lean on electronic controls too.
+
+8
+00:00:24,240 --> 00:00:25,947
+So the lights start going out.
+
+9
+00:00:26,450 --> 00:00:27,673
+What still works?
+
+10
+00:00:27,673 --> 00:00:28,753
+Wind-up clocks.
+
+11
+00:00:28,753 --> 00:00:29,401
+Bicycles.
+
+12
+00:00:29,401 --> 00:00:31,488
+Old cars with no electronics.
+
+13
+00:00:31,488 --> 00:00:34,582
+And antique radios built with vacuum tubes.
+
+14
+00:00:35,083 --> 00:00:41,567
+Tubes are so tough that a Soviet fighter jet was still flying with tube electronics in the 1970s.
+
+15
+00:00:42,083 --> 00:00:44,796
+So what if the transistor was never invented?
+
+16
+00:00:44,796 --> 00:00:46,363
+Full story on the channel.

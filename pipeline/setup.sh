@@ -5,6 +5,9 @@ REPO="$(cd "$(dirname "$0")/.." && pwd)"
 mkdir -p /home/claude/proj /home/claude/data /home/claude/tts /home/claude/out
 cp "$REPO"/pipeline/*.py /home/claude/proj/
 pip install --break-system-packages -q skia-python kokoro-onnx soundfile scipy opencv-python-headless numpy pillow 2>&1 | tail -1 || true
+# skia needs libEGL; some images ship a broken system Pillow (cannot import _imaging)
+python3 -c "import skia" 2>/dev/null || (apt-get install -y -q libegl1 libgl1 >/dev/null 2>&1 || (apt-get update -q >/dev/null 2>&1 && apt-get install -y -q libegl1 libgl1 >/dev/null 2>&1))
+python3 -c "from PIL import Image; Image.new('RGB',(2,2)).save('/tmp/_pil.jpg')" 2>/dev/null || pip install --break-system-packages -q --ignore-installed pillow 2>&1 | tail -1
 command -v ffmpeg >/dev/null || (apt-get install -y -q ffmpeg >/dev/null 2>&1 || pip install --break-system-packages -q imageio-ffmpeg)
 fc-list | grep -q "Inter Display" || echo "WARNING: Inter Display font missing (fonts-inter package)"
 cd /home/claude/tts

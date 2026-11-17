@@ -1,0 +1,59 @@
+1
+00:00:00,150 --> 00:00:03,959
+The chip in your phone was printed with light made from exploding tin.
+
+2
+00:00:04,450 --> 00:00:09,018
+To draw features this small, chip makers use extreme ultraviolet light,
+
+3
+00:00:09,018 --> 00:00:12,685
+with a wavelength of just thirteen point five nanometers.
+
+4
+00:00:13,183 --> 00:00:13,867
+To make it,
+
+5
+00:00:13,867 --> 00:00:18,402
+a machine fires about fifty thousand droplets of molten tin every second,
+
+6
+00:00:18,402 --> 00:00:20,327
+and hits each one with a laser.
+
+7
+00:00:20,817 --> 00:00:24,123
+The tin turns into plasma hotter than the surface of the Sun,
+
+8
+00:00:24,123 --> 00:00:26,129
+and that plasma glows with the light.
+
+9
+00:00:26,617 --> 00:00:29,621
+Air absorbs that light, so it all runs in a vacuum,
+
+10
+00:00:29,621 --> 00:00:33,215
+off mirrors so smooth that, scaled up to the size of Germany,
+
+11
+00:00:33,215 --> 00:00:36,161
+the biggest bump would be a tenth of a millimeter.
+
+12
+00:00:36,650 --> 00:00:39,673
+Just one company, ASML, builds these machines.
+
+13
+00:00:39,673 --> 00:00:44,340
+The newest model costs around three hundred and eighty million dollars.
+
+14
+00:00:44,850 --> 00:00:46,832
+So what's inside the chips it makes?
+
+15
+00:00:46,832 --> 00:00:48,263
+Full story on the channel.

@@ -1,0 +1,359 @@
+UPLOAD SHEET — Batch 04 (tech), 2026-11-17
+Privacy: Unlisted (switch to Public after processing). Category: Science & Technology. Not made for kids.
+Altered/synthetic content: No (animated, AI narrator disclosed in description).
+
+======================================================================
+1. What If the Transistor Was Never Invented?
+File: b4_tubes.mp4   Type: Long-form
+Thumbnail: thumbnail_tubes.png   Captions: b4_tubes.srt
+Tags: what if, technology, science, computer hardware, transistor, vacuum tube, ENIAC, Bell Labs, history of computing, MOSFET, semiconductors
+
+Description:
+Your phone's chip holds about 19 billion transistors. Rebuild it with vacuum tubes and you'd need around 160 gigawatts and 150 Olympic pools of glass. So what would a world without the transistor look like? And why was it almost invented 22 years early?
+
+⏱️ Chapters
+0:00 19 billion switches
+0:28 The rules: vacuum tubes
+1:21 1946: ENIAC
+2:13 Tubes burn out
+3:00 December 1947: the day that never comes
+3:46 1955: no transistor radio
+4:26 1969: Apollo without chips
+5:02 Today: a phone made of tubes
+6:15 Tubes never died
+7:10 Patented 22 years early
+8:24 What would you miss?
+
+📚 Sources
+- Tom's Hardware: Apple A17 Pro: https://tomshardware.com/news/apple-a17-pro-3nm-iphone-15-pro
+- Wikipedia: Apple A17: https://en.wikipedia.org/wiki/Apple_A17
+- Wikipedia: Triode: https://en.wikipedia.org/wiki/Triode
+- Wikipedia: Audion: https://en.wikipedia.org/wiki/Audion
+- Wikipedia: Colossus computer: https://en.wikipedia.org/wiki/Colossus_computer
+- Wikipedia: ENIAC: https://en.wikipedia.org/wiki/ENIAC
+- Radiomuseum: ENIAC: https://radiomuseum.org/r/military_eniac_electronic_numerical_integrator_and.html
+- Penn Almanac: ENIAC at 75: https://almanac.upenn.edu/articles/75th-anniversary-of-the-electronic-numerical-integrator-and-computer-eniac
+- CACM: ENIAC turns 75: https://cacm.acm.org/news/250485-eniac-turns-75/fulltext
+- U.S. Census Bureau: UNIVAC I: https://www.census.gov/about/history/bureau-history/census-innovations/technology/univac-i.html
+- Wikipedia: UNIVAC I: https://www.wikipedia.org/wiki/UNIVAC_I
+- ETHW: Bell demonstrates transistor: https://ethw.org/Bell_Demonstrates_Transistor
+- CHM: Dec 23 in history: https://www.computerhistory.org/tdih/december/23/
+- Nokia Bell Labs: 1956 Nobel Prize: https://www.nokia.com/bell-labs/about/awards/1956-nobel-prize-physics/
+- Smithsonian NMAH: Log book with computer bug: https://www.si.edu/object/log-book-computer-bug:nmah_334663
+- CHM: Regency TR-1: https://www.computerhistory.org/collections/catalog/102711690
+- Wikipedia: Regency TR-1: https://en.wikipedia.org/wiki/Regency_TR-1
+- CHM: 1952 transistorized consumer products appear: https://www.computerhistory.org/siliconengine/transistorized-consumer-products-appear/
+- Wikipedia: Apollo Guidance Computer: https://en.wikipedia.org/wiki/Apollo_Guidance_Computer
+- CHM: 1962 aerospace systems first ICs in computers: https://www.computerhistory.org/semiconductor/timeline/1962-Apollo.html
+- Wikipedia: Cavity magnetron: https://en.wikipedia.org/wiki/Cavity_magnetron
+- Wikipedia: X-ray tube: https://en.wikipedia.org/wiki/X-ray_tube
+- Wikipedia: Valve amplifier: https://en.wikipedia.org/wiki/Valve_amplifier
+- GlobalSecurity: MiG-25 in service: https://www.globalsecurity.org/military/world/russia/mig-25-service.htm
+- Physics Today: NASA's high-speed transistor uses vacuum-tube principle: https://physicstoday.aip.org/news/nasas-high-speed-transistor-uses-same-principle-as-vacuum-tubes
+- Tech Xplore 2014: https://techxplore.com/news/2014-06-scientists-explore-mash-up-vacuum-tube.amp
+- All About Circuits: Lilienfeld: https://www.allaboutcircuits.com/news/how-engineer-julius-edgar-lilienfeld-laid-groundwork-modern-fets/
+- Wikipedia: Julius Edgar Lilienfeld: https://wikiwand.com/en/articles/Julius_Edgar_Lilienfeld
+- CHM: 1960 MOS transistor demonstrated: https://www.computerhistory.org/siliconengine/metal-oxide-semiconductor-mos-transistor-demonstrated/
+- CHM: 13 sextillion & counting: https://computerhistory.org/blog/13-sextillion-counting-the-long-winding-road-to-the-most-frequently-manufactured-human-artifact-in-history/
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science
+
+======================================================================
+2. What If You Shrank Down Inside a Computer Chip?
+File: b4_shrink.mp4   Type: Long-form
+Thumbnail: thumbnail_shrink.png   Captions: b4_shrink.srt
+Tags: what if, technology, science, computer hardware, microchip, transistor, semiconductor, 3nm, EUV lithography, quantum tunneling, CPU
+
+Description:
+Shrink down and walk inside a laptop chip: a package like a building, a city of copper highways 15 levels deep, transistor fins like slices of bread, and walls only five atoms thick. Plus the reason a "3 nm" chip has nothing 3 nm wide.
+
+⏱️ Chapters
+0:00 Thinner than a hair
+0:24 The rules
+0:43 1 mm: the package
+1:18 1 µm: a city of copper
+2:08 4 billion ticks a second
+2:29 100 nm: the transistors
+3:42 The 3 nm myth
+4:11 1 nm: atoms
+4:49 Quantum tunneling
+5:22 The heat wall
+6:07 Printing with tin plasma
+6:44 Why you'd be blind
+7:55 Where would you go?
+
+📚 Sources
+- Society for Science: measure your hair: https://student.societyforscience.org/blog/eureka-lab/measure-width-your-hair-laser-pointer
+- Nanowerk: how small is a nanometer: https://www.nanowerk.com/nanotechnology-glossary/nanometer.php
+- Wikipedia: 3 nm process: https://en.wikipedia.org/wiki/3_nm_process
+- Apple Newsroom, Oct 2023: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+- Wikipedia: Flip chip: https://en.wikipedia.org/wiki/Flip_chip
+- SFA Oxford: high-purity silicon: https://www.sfa-oxford.com/rare-earths-and-minor-metals/minor-metals-and-minerals/silicon-market-and-silicon-price-drivers/high-purity-silicon-market-and-price-drivers/
+- Halbleiter.org: raw silicon: https://halbleiter.org/en/waferfabrication/rawsilicon/
+- IEEE Spectrum: cobalt and chip wiring: https://spectrum.ieee.org/cobalt-could-untangle-chips-wiring-problems
+- MIT Technology Review 2012: https://www.technologyreview.com/2012/07/10/185008/making-wiring-that-doesnt-trip-up-computer-chips/amp/
+- Halbleiter.org: wiring: https://www.halbleiter.org/en/metallization/wiring/
+- IBM: Copper interconnects: https://www.ibm.com/history/copper-interconnects
+- Wikipedia: Dennard scaling: https://en.wikipedia.org/wiki/Dennard_scaling
+- Wikipedia: FinFET: https://en.wikipedia.org/wiki/Fin_field-effect_transistor
+- Wikipedia: Multigate device (GAAFET): https://en.wikipedia.org/wiki/Multigate_device
+- Wikipedia: Cleanroom: https://en.wikipedia.org/wiki/Cleanroom
+- Wikipedia: Silicon: https://en.wikipedia.org/wiki/Silicon
+- Intel press release, Jan 2007: https://www.intc.com/news-events/press-releases/detail/1065/intels-transistor-technology-breakthrough-represents
+- Wikipedia: Quantum tunnelling: https://en.wikipedia.org/wiki/Quantum_tunnelling
+- Horowitz et al., Stanford: https://www.Gwern.net/doc/cs/hardware/2014-horowitz-2.pdf
+- ITworld Canada: Intel sees a roadblock ahead: https://itworldcanada.com/?p=29555
+- The Register, Feb 2001: https://www.theregister.com/2001/02/07/chip_designers_vow_to_cool
+- ASML: the hottest thing about ASML machines: https://www.asml.com/en/discover/hot-machines
+- Bits&Chips: what makes an EUV scanner tick: https://bits-chips.nl/artikel/what-makes-an-euv-scanner-tick/
+- ASML: lenses and mirrors: https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors
+- ZEISS SMT: EUV lithography: https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
+- NASA: visible light: https://science.nasa.gov/ems/09_visiblelight/
+- Wikipedia: Electron microscope: https://en.wikipedia.org/wiki/Electron_microscope
+- Wikipedia: High Bandwidth Memory: https://en.wikipedia.org/wiki/High_Bandwidth_Memory
+- Britannica: Moore's law: https://www.britannica.com/print/article/705881
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science
+
+======================================================================
+3. What If a Cosmic Ray Flipped a Bit in Your Computer?
+File: b4_cosmic.mp4   Type: Long-form
+Thumbnail: thumbnail_cosmic.png   Captions: b4_cosmic.srt
+Tags: what if, technology, science, computer hardware, cosmic rays, bit flip, soft error, single event upset, ECC memory, Voyager 2, computer memory
+
+Description:
+In 2003 a Belgian voting machine gave a candidate exactly 4,096 extra votes, and the leading explanation is a single bit flipped by a particle from space. Here's how cosmic rays flip bits, what has really happened, and how your computer fights back.
+
+⏱️ Chapters
+0:00 4,096 extra votes
+0:29 The rules: bits
+1:12 Where the particles come from
+2:44 The hit
+3:32 It really happened
+5:03 Radioactive packaging
+5:46 How often?
+6:31 The defense
+7:27 Cosmic rays that help
+7:54 Cosmic ray or bad code?
+
+📚 Sources
+- Wikipedia: Electronic voting in Belgium: https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium
+- Computerworld: the culprit could be cosmic rays: https://www.computerworld.com/?p=1679274
+- Wikipedia: Dynamic random-access memory: https://en.wikipedia.org/wiki/Dynamic_random-access_memory
+- NASA Imagine the Universe: cosmic rays: https://imagine.gsfc.nasa.gov/science/toolbox/cosmic_rays1.html
+- APS News: Hess balloon flight: https://www.aps.org/apsnews/2010/04/hess-balloon-flight-cosmic-rays
+- CERN timeline: https://timeline.web.cern.ch/node/581
+- Nobel Prize: Victor F. Hess: https://www.nobelprize.org/nobel_prizes/physics/laureates/1936/hess-facts.html
+- Wikipedia: Oh-My-God particle: https://en.wikipedia.org/wiki/Oh-My-God_particle
+- HyperPhysics: atmospheric muons: https://hyperphysics.gsu.edu/hbase/Particles/muonatm.html
+- Berkeley Lab: muons: https://cosmic.lbl.gov/SKliewer/Cosmic_Rays/Muons.htm
+- CERN Science in School: particle physics and aviation safety: https://scienceinschool.org/article/2023/particle-physics-aviation-safety
+- Wikipedia: Soft error: https://en.wikipedia.org/wiki/Soft_error
+- Wikipedia: Single-event upset: https://en.wikipedia.org/wiki/Single-event_upset
+- NASA NEPP: Cassini SSR multiple-bit upsets: https://nepp.nasa.gov/docuploads/F077ADF5-6491-45DA-AE3904DA8D0C36A1/chris.pdf
+- STScI Hubble primer: https://ssb.stsci.edu/cdbs/perigee/jyounger/PhaseI_CallForProposals/2003Output/Primer/Ch_2_Systemoverview4.html
+- Wikipedia: South Atlantic Anomaly: https://en.wikipedia.org/wiki/South_Atlantic_Anomaly
+- The Planetary Society: Voyager 2, yep, it was a flipped bit: https://www.planetary.org/articles/2492
+- NASA JPL: engineers diagnosing Voyager 2: https://www.jpl.nasa.gov/news/engineers-diagnosing-voyager-2-data-system-update
+- NASA JPL Voyager mission status: https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/
+- Nintendo Life 2021: https://nintendolife.com/news/2021/09/random_a_rogue_space_particle_could_be_responsible_for_this_unsolved_super_mario_64_speedrun_glitch
+- Wikipedia: Pannenkoek2012: https://en.wikipedia.org/wiki/Pannenkoek2012
+- May & Woods 1979, IEEE TED (PDF): https://www.Gwern.net/doc/cs/hardware/1979-may.pdf
+- EESemi: soft errors: https://www.eesemi.com/soft-error.htm
+- Wikipedia: Bitsquatting: https://en.wikipedia.org/wiki/Bitsquatting
+- Tezzaron: soft errors in electronic memory: https://tezzaron.com/media/soft_errors_1_1_secure.pdf
+- Schroeder, Pinheiro & Weber 2009: https://research.google/pubs/dram-errors-in-the-wild-a-large-scale-field-study/
+- The Register: https://www.theregister.com/2009/10/12/google_server_memory/
+- Tom's Hardware, March 2026: https://www.tomshardware.com/pc-components/ram/bit-flips-cause-up-to-15-percent-of-firefox-crashes-asserts-mozilla-engineer-figure-inferred-from-470-000-auto-submitted-crash-reports
+- IEEE Computer Society: Richard Hamming: https://history.computer.org/pioneers/hamming.html
+- Wikipedia: Hamming code: https://en.wikipedia.org/wiki/Hamming_code
+- Wikipedia: IBM AP-101 / Space Shuttle GPCs: https://en.wikipedia.org/wiki/IBM_AP-101
+- ISIS Neutron and Muon Source: ChipIr: https://www.isis.stfc.ac.uk/Pages/Chip-Irradiation-.aspx
+- Morishima et al. 2017, Nature (arXiv): https://arxiv.org/abs/1711.01576
+- Nagoya University release: https://en.nagoya-u.ac.jp/research/activities/news/2017/11/Physicists-at-Nagoya-University-discover-a-huge-void-in-Giza's-Great-Pyramid.html
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science
+
+======================================================================
+4. What If Your Phone Ran on Vacuum Tubes? #shorts
+File: short_b4_tubes.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_tubes.srt
+Tags: shorts, what if, technology, science, computer hardware, vacuum tube, transistor
+
+Description:
+A phone chip rebuilt with vacuum tubes would need about 160 gigawatts.
+
+Full story: "What If the Transistor Was Never Invented?" on the channel.
+
+📚 Sources
+- Tom's Hardware: Apple A17 Pro: https://tomshardware.com/news/apple-a17-pro-3nm-iphone-15-pro
+- Wikipedia: Apple A17: https://en.wikipedia.org/wiki/Apple_A17
+- Wikipedia: Triode: https://en.wikipedia.org/wiki/Triode
+- Wikipedia: Audion: https://en.wikipedia.org/wiki/Audion
+- Wikipedia: Colossus computer: https://en.wikipedia.org/wiki/Colossus_computer
+- Wikipedia: ENIAC: https://en.wikipedia.org/wiki/ENIAC
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
+
+======================================================================
+5. The First Computer Bug Was a Real Moth #shorts
+File: short_b4_moth.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_moth.srt
+Tags: shorts, what if, technology, science, computer hardware, computer bug, Harvard Mark II, Grace Hopper
+
+Description:
+September 9, 1947: a moth in relay #70 of the Harvard Mark II. But "bug" is older than the moth.
+
+Full story: "What If the Transistor Was Never Invented?" on the channel.
+
+📚 Sources
+- Smithsonian NMAH: Log book with computer bug: https://www.si.edu/object/log-book-computer-bug:nmah_334663
+- Computing History UK: first computer bug: https://www.computinghistory.org.uk/det/5927/First-computer-bug-is-found/
+- Computerworld: Did Grace Hopper invent "bug"?: https://www.computerworld.com/article/2515435/moth-in-the-machine--debugging-the-origins-of--bug-.html
+- Wikipedia: Bug (engineering): https://en.wikipedia.org/wiki/Bug_%28engineering%29
+- ETHW: Bell demonstrates transistor: https://ethw.org/Bell_Demonstrates_Transistor
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
+
+======================================================================
+6. What If Every Chip on Earth Stopped at Once? #shorts
+File: short_b4_blackout.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_blackout.srt
+Tags: shorts, what if, technology, science, computer hardware, microchips, chip shortage
+
+Description:
+Every chip on Earth switches off at once. What stops, and what still works?
+
+Full story: "What If the Transistor Was Never Invented?" on the channel.
+
+📚 Sources
+- CNBC, Sept 2021: https://www.cnbc.com/2021/09/23/chip-shortage-expected-to-cost-auto-industry-210-billion-in-2021.html
+- GlobalSecurity: MiG-25 in service: https://www.globalsecurity.org/military/world/russia/mig-25-service.htm
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
+
+======================================================================
+7. What If You Shrank Inside a Computer Chip? #shorts
+File: short_b4_shrink.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_shrink.srt
+Tags: shorts, what if, technology, science, computer hardware, microchip, transistor
+
+Description:
+Copper highways, 92 billion transistors, and walls so thin electrons tunnel through.
+
+Full story: "What If You Shrank Down Inside a Computer Chip?" on the channel.
+
+📚 Sources
+- Society for Science: measure your hair: https://student.societyforscience.org/blog/eureka-lab/measure-width-your-hair-laser-pointer
+- Nanowerk: how small is a nanometer: https://www.nanowerk.com/nanotechnology-glossary/nanometer.php
+- Wikipedia: 3 nm process: https://en.wikipedia.org/wiki/3_nm_process
+- Apple Newsroom, Oct 2023: https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+- Wikipedia: Flip chip: https://en.wikipedia.org/wiki/Flip_chip
+- SFA Oxford: high-purity silicon: https://www.sfa-oxford.com/rare-earths-and-minor-metals/minor-metals-and-minerals/silicon-market-and-silicon-price-drivers/high-purity-silicon-market-and-price-drivers/
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
+
+======================================================================
+8. Your Chips Are Printed With Exploding Tin #shorts
+File: short_b4_euv.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_euv.srt
+Tags: shorts, what if, technology, science, computer hardware, EUV lithography, semiconductors
+
+Description:
+Chips are printed with 13.5 nm light from laser-blasted tin droplets.
+
+Full story: "What If You Shrank Down Inside a Computer Chip?" on the channel.
+
+📚 Sources
+- ASML: the hottest thing about ASML machines: https://www.asml.com/en/discover/hot-machines
+- World of Photonics: EUV lithography: https://world-of-photonics.com/en/photonics-industry-portal/detail/euv-lithography.html
+- Tom's Hardware: ASML 1,000 W source (current 50,000/s): https://www.tomshardware.com/tech-industry/semiconductors/asml-makes-breakthrough-in-euv-chipmaking-tech-plans-to-increase-speed-by-50-percent-by-2030-new-1-000-watt-light-source-fires-three-lasers-at-100-000-tin-droplets-every-second
+- ASML: lenses and mirrors: https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors
+- ZEISS SMT: https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
+- Tom's Hardware: High-NA costs $380 million: https://www.tomshardware.com/tech-industry/manufacturing/asmls-high-na-chipmaking-tool-will-cost-dollar380-million-the-company-already-has-orders-for-10-to-20-machines-and-is-ramping-up-production
+- Data Center Knowledge: $380M, 165-ton machine: https://www.datacenterknowledge.com/ai-data-centers/asml-shows-off-380m-165-ton-machine-behind-ai-shift
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
+
+======================================================================
+9. What If Moore's Law Never Slowed Down? #shorts
+File: short_b4_moore.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_moore.srt
+Tags: shorts, what if, technology, science, computer hardware, Moore's law, CPU
+
+Description:
+Clock speeds stalled near 4 GHz. Here's why Moore's law hit heat and atoms.
+
+Full story: "What If You Shrank Down Inside a Computer Chip?" on the channel.
+
+📚 Sources
+- Britannica: Moore's law: https://www.britannica.com/print/article/705881
+- CHM catalog: https://www.computerhistory.org/collections/catalog/102745088
+- Horowitz et al.: https://www.Gwern.net/doc/cs/hardware/2014-horowitz-2.pdf
+- Wikipedia: Dennard scaling: https://en.wikipedia.org/wiki/Dennard_scaling
+- Wikipedia: Silicon: https://en.wikipedia.org/wiki/Silicon
+- Wikipedia: High Bandwidth Memory: https://en.wikipedia.org/wiki/High_Bandwidth_Memory
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
+
+======================================================================
+10. What If a Cosmic Ray Hit Your Computer? #shorts
+File: short_b4_cosmic.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_cosmic.srt
+Tags: shorts, what if, technology, science, computer hardware, cosmic rays, bit flip
+
+Description:
+Particles from space pass through your phone every minute. Sometimes one flips a bit.
+
+Full story: "What If a Cosmic Ray Flipped a Bit in Your Computer?" on the channel.
+
+📚 Sources
+- Wikipedia: Electronic voting in Belgium: https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium
+- Computerworld: the culprit could be cosmic rays: https://www.computerworld.com/?p=1679274
+- Wikipedia: Dynamic random-access memory: https://en.wikipedia.org/wiki/Dynamic_random-access_memory
+- NASA Imagine the Universe: cosmic rays: https://imagine.gsfc.nasa.gov/science/toolbox/cosmic_rays1.html
+- APS News: Hess balloon flight: https://www.aps.org/apsnews/2010/04/hess-balloon-flight-cosmic-rays
+- CERN timeline: https://timeline.web.cern.ch/node/581
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
+
+======================================================================
+11. The Election Glitch That Added 4,096 Votes #shorts
+File: short_b4_vote.mp4   Type: Short
+Thumbnail: -   Captions: short_b4_vote.srt
+Tags: shorts, what if, technology, science, computer hardware, bit flip, cosmic rays, election
+
+Description:
+4,096 is 2 to the 12th power. That number is the clue that points to a single flipped bit.
+
+Full story: "What If a Cosmic Ray Flipped a Bit in Your Computer?" on the channel.
+
+📚 Sources
+- Wikipedia: Electronic voting in Belgium: https://en.wikipedia.org/wiki/Electronic_voting_in_Belgium
+- Computerworld: https://www.computerworld.com/?p=1679274
+- Wikipedia: Soft error: https://en.wikipedia.org/wiki/Soft_error
+- CERN Science in School: https://scienceinschool.org/article/2023/particle-physics-aviation-safety
+
+Narration uses an AI voice. Animation and music are original.
+
+#whatif #technology #science #shorts
