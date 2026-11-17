@@ -1,0 +1,47 @@
+1
+00:00:00,150 --> 00:00:03,140
+What if you shrank down and walked inside a computer chip?
+
+2
+00:00:03,650 --> 00:00:05,148
+First, a city of copper.
+
+3
+00:00:05,148 --> 00:00:09,141
+Tens of kilometers of wiring, stacked about fifteen levels deep.
+
+4
+00:00:09,650 --> 00:00:10,994
+Then the transistors.
+
+5
+00:00:10,994 --> 00:00:13,937
+Ninety-two billion of them in one laptop chip.
+
+6
+00:00:13,937 --> 00:00:16,497
+More than ten for every person on Earth.
+
+7
+00:00:16,983 --> 00:00:21,957
+It's sold as a three-nanometer chip, but nothing in it is three nanometers wide.
+
+8
+00:00:21,957 --> 00:00:25,003
+The gates are about forty-eight nanometers apart.
+
+9
+00:00:25,517 --> 00:00:29,069
+And the insulating walls once got so thin, about five atoms,
+
+10
+00:00:29,069 --> 00:00:31,792
+that electrons tunneled straight through them.
+
+11
+00:00:32,283 --> 00:00:34,388
+So what would you actually see down there?
+
+12
+00:00:34,388 --> 00:00:35,691
+Full story on the channel.
