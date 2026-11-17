@@ -1,0 +1,39 @@
+1
+00:00:00,150 --> 00:00:03,255
+Right now, particles from space are passing through your phone.
+
+2
+00:00:03,750 --> 00:00:07,560
+About one muon passes through every square centimeter, every minute.
+
+3
+00:00:08,050 --> 00:00:12,560
+When a particle hits a memory chip just right, it can flip a single bit.
+
+4
+00:00:12,560 --> 00:00:13,876
+A zero becomes a one.
+
+5
+00:00:14,383 --> 00:00:18,291
+In 2010, a flipped bit made Voyager 2 send home gibberish,
+
+6
+00:00:18,291 --> 00:00:20,447
+until engineers flipped it back.
+
+7
+00:00:20,950 --> 00:00:22,477
+And in Belgium in 2003,
+
+8
+00:00:22,477 --> 00:00:30,115
+a single flipped bit is the leading explanation for one candidate getting four thousand and ninety-six extra votes.
+
+9
+00:00:30,617 --> 00:00:33,155
+So why doesn't your computer crash every day?
+
+10
+00:00:33,155 --> 00:00:34,622
+Full story on the channel.
