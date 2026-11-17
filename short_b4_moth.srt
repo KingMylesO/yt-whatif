@@ -1,0 +1,59 @@
+1
+00:00:00,150 --> 00:00:03,850
+This moth is in a museum, because it got stuck inside a computer.
+
+2
+00:00:04,350 --> 00:00:06,147
+On September ninth, 1947,
+
+3
+00:00:06,147 --> 00:00:12,040
+engineers working on the Harvard Mark II found it trapped in relay number seventy.
+
+4
+00:00:12,550 --> 00:00:14,564
+The Mark II was built from relays,
+
+5
+00:00:14,564 --> 00:00:17,880
+little switches that clicked open and shut with magnets.
+
+6
+00:00:17,880 --> 00:00:20,841
+One moth in the wrong place, and a circuit failed.
+
+7
+00:00:21,350 --> 00:00:23,967
+So they taped it into the logbook, and wrote:
+
+8
+00:00:23,967 --> 00:00:26,119
+First actual case of bug being found.
+
+9
+00:00:26,617 --> 00:00:30,380
+But the joke only works because bug was already slang.
+
+10
+00:00:30,380 --> 00:00:34,074
+Thomas Edison was calling glitches bugs back in 1878.
+
+11
+00:00:34,583 --> 00:00:39,533
+Grace Hopper, who worked on the Mark II, loved telling the story and made it famous.
+
+12
+00:00:39,533 --> 00:00:42,067
+The logbook page is now at the Smithsonian.
+
+13
+00:00:42,583 --> 00:00:44,981
+Three months later, the transistor arrived.
+
+14
+00:00:44,981 --> 00:00:46,152
+What if it never had?
+
+15
+00:00:46,152 --> 00:00:47,601
+Full story on the channel.
