@@ -1,0 +1,63 @@
+1
+00:00:00,150 --> 00:00:00,664
+In 1965,
+
+2
+00:00:00,664 --> 00:00:06,126
+Gordon Moore predicted that chips would double their number of components every year.
+
+3
+00:00:06,617 --> 00:00:10,241
+In 1975, he changed it to about every two years.
+
+4
+00:00:10,241 --> 00:00:13,110
+And for decades, the industry kept up.
+
+5
+00:00:13,617 --> 00:00:15,580
+So what if it never slowed down?
+
+6
+00:00:15,580 --> 00:00:17,851
+Clock speeds would still be climbing.
+
+7
+00:00:17,851 --> 00:00:21,778
+Instead, they stalled at around four gigahertz in the mid-2000s.
+
+8
+00:00:22,283 --> 00:00:23,398
+The reason is heat.
+
+9
+00:00:23,398 --> 00:00:26,038
+Air-cooled chips hit roughly a hundred watts.
+
+10
+00:00:26,038 --> 00:00:28,854
+Push them much harder, and they cook themselves.
+
+11
+00:00:29,350 --> 00:00:30,902
+And there's a harder wall.
+
+12
+00:00:30,902 --> 00:00:34,186
+Silicon atoms sit about a quarter of a nanometer apart.
+
+13
+00:00:34,186 --> 00:00:36,932
+You can't build a switch smaller than an atom.
+
+14
+00:00:37,417 --> 00:00:41,940
+So chips are starting to grow upward instead, stacking layers like a skyscraper.
+
+15
+00:00:42,450 --> 00:00:44,224
+What would it look like inside one?
+
+16
+00:00:44,224 --> 00:00:45,542
+Full story on the channel.
