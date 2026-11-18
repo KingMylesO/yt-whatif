@@ -4,6 +4,7 @@ import numpy as np, skia
 sys.path.insert(0, os.path.dirname(__file__))
 from core import *
 import scenes as SC
+from cta import cta_overlay, cta_window
 import glob as _glob
 ALL = dict(SC.SCENES)
 for _m in ["common2"] + sorted(os.path.basename(p)[:-3] for p in _glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "scenes_*.py"))):
@@ -71,6 +72,9 @@ class Drawer:
         S = SC.Ctx(sc["dur"], sc["lines"], sc.get("opts", {}), self.W, self.H)
         ALL[sc["scene"]](c, self.W, self.H, t, S)
         c.restore()
+        win = cta_window(sc)  # mid-video like & subscribe while the opts["cta"] line plays
+        if win and win[0] <= t <= win[1]:
+            cta_overlay(c, self.W, self.H, t - win[0], win[1] - win[0], self.short)
         if self.short: overlay_short(c, self.W, self.H, t, sc)
         return self.arr
 
@@ -79,8 +83,11 @@ def preview(name, keys=None, fracs=(0.3, 0.85), out=None, scale=0.33):
     tl = load(name); d = Drawer(name); ims = []
     for sc in tl["scenes"]:
         if keys and sc["key"] not in keys: continue
-        for f in fracs:
-            a = d.frame(sc, sc["dur"] * f).copy()
+        ts = [sc["dur"] * f for f in fracs]
+        win = cta_window(sc)
+        if win: ts.append(min(win[1], win[0] + 1.5))  # mid-CTA frame: check the subscribe button
+        for f in ts:
+            a = d.frame(sc, f).copy()
             im = Image.fromarray(a[:, :, :3]); im = im.resize((int(d.W * scale), int(d.H * scale)))
             ims.append((sc["key"], f, im))
     cols = 4 if not d.short else 6

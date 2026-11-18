@@ -16,8 +16,9 @@ This is the rulebook for every script, title and thumbnail on the channel, and e
   - 11 or more videos: 3 long-form plus 8 Shorts.
   - Each long-form gets a teaser Short and a standalone Short, and the run adds 2 extra standalone Shorts.
 - **Release:** uploaded **unlisted** via Metricool right after each run. The owner switches them to public in Studio once YouTube has finished processing them.
-- **Long-form:** 8–12 minutes, 1,200–1,800 words. At this voice's pace a script runs about 0.42 s per word, so **write at least 1,200 words** to clear 8:00, the minimum for mid-roll ads. Add real "wait, really?" facts rather than padding.
+- **Long-form:** 8–12 minutes, 1,300–1,900 words. Batches 03–04 measured about 0.38 s per word at this voice's pace, so **write at least 1,300 words** to clear 8:00, the minimum for mid-roll ads. Add real "wait, really?" facts rather than padding.
 - **Shorts:** 30–55 seconds, 90–140 words, ending by pointing to the long video.
+- **Like and subscribe:** every video, long-form and Short, asks for it once around the middle (owner, 2026-11-18). See sections 4–5.
 
 ## 3. Voice and tone
 - Second person ("you"), present tense, with the viewer inside the scenario.
@@ -31,13 +32,15 @@ This is the rulebook for every script, title and thumbnail on the channel, and e
 1. **Hook** (0:00–0:15): one shocking, true statement plus the question.
 2. **Setup** (0:15–1:00): the rules of the hypothetical.
 3. **Timeline:** escalating time jumps (e.g. 8 minutes → 1 day → 1 year → 1 million years), each with a title card.
-4. **Twist** (last ~90 s): a counterintuitive outcome, or "this actually almost happened".
-5. **Outro** (last ~15 s): a callback to the hook plus a question for the comments.
+4. **Like and subscribe** (about the halfway mark, 45–55% of the runtime, at a chapter boundary; never in the hook, the twist or the outro): one short, natural line in the narrator's calm voice, worded differently in every video, e.g. "Quick favour: if you're enjoying this, hit like and subscribe. It really helps the channel." It doesn't count toward the word minimum.
+5. **Twist** (last ~90 s): a counterintuitive outcome, or "this actually almost happened".
+6. **Outro** (last ~15 s): a callback to the hook plus a question for the comments.
 
 ## 5. Shorts structure
 1. **Hook** (0–2 s): the on-screen text matches the narration.
 2. **Payoff** (2–40 s): 3–5 fast beats, each a new fact.
-3. **Loop or redirect** (last 5 s): end on "Full story on the channel."
+3. **Mid-Short like and subscribe** (around the halfway mark, between two beats): eight words or fewer, e.g. "Like and subscribe for more what-ifs." Then keep going; the Short still ends with "Full story on the channel."
+4. **Loop or redirect** (last 5 s): end on "Full story on the channel."
 
 Vertical 9:16 with burned-in captions, and a visual change every 1–2 seconds.
 
