@@ -94,3 +94,12 @@ Narration uses an AI voice. Animation and music are original.
 - **AI disclosure:** the Studio AI question covers realistic content only, so our animated videos with a generic AI narrator answer **No** (`isAiGeneratedContent: false`). The description always says the narration uses an AI voice.
 - **Audience:** always "not made for kids".
 - **No real people:** no likenesses or voices of real people, no copyrighted characters or brands, and only original music and art.
+
+## 11. The Crush Files (owner's series, 2026-11-20)
+- **What:** every Monday and Friday run, 2 of the 10 videos are *The Crush Files*: real science of crushes and attraction (what your brain and body do around a crush), told in second person like everything else. By default both are Shorts, taking 2 of the run's 4 extra standalone Shorts.
+- **Look: 3D world, 2D character.** Backgrounds and objects are low-poly 3D sets (`pipeline/kit3d.py`: `bedroom()`, `hallway()`, or new sets built from `box`, `cylinder`, `sphere`, `heart`, `question_mark`). Characters are flat 2D with thick navy outlines (`pipeline/mc.py`), planted on the 3D floor with `kit3d.anchor()`.
+- **Kai** is the main character: 19, curious, royal-blue hoodie with the yellow "?" patch, coral headphones around his neck. Use `mc.kai(...)` with its poses (idle, wave, phone, think, shrug, point, cheeks, fist) and expressions (neutral, happy, blush, nervous, shocked, lovestruck, sad, curious, talk). Never redraw him differently: the character sheet is `reports/kai_assets/kai_character_sheet.png`.
+- **The Crush** is always the faceless glowing silhouette from `mc.crush(...)`, so every viewer can picture their own. Never give it a face, a name, a gender or an age.
+- **Keep it PG and kind.** No sexual content, nothing about bodies being attractive or not, no body-shaming, no pickup tactics or "how to make them like you" advice, no relationship or mental-health advice. It's an explainer about feelings everyone has. Studies about attraction are often small: say "one study found", name the researchers, and don't overstate.
+- **Shorts framing:** fill the frame with the 3D set, and keep Kai's head below 0.20H and feet above 0.58H (captions burn in at 0.635H). The camera in `kai_art.style_short` does this; static cameras can cache the set with `kit3d.CACHE`.
+- **Titles:** e.g. "What Your Brain Does When Your Crush Texts Back", "Why You Blush Around Your Crush". Badge chip: "THE CRUSH FILES". Topic ideas are in the Crush Files backlog in `topics.md`.

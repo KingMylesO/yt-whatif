@@ -26,6 +26,7 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
 3. **Pick 10 videos:**
    - 2 long-form topics, each with 2 Shorts: a teaser cut from it and a standalone mini what-if on the same theme. **At least one long-form comes from the "happening now" ideas.**
    - 4 more standalone Shorts from the idea list, each pointing to the closest long-form. At least 2 of them come from the "happening now" ideas.
+   - **The Crush Files (owner, 2026-11-20):** the other 2 extra Shorts are crush-science Shorts starring Kai in the 3D-world/2D-character style (STYLE.md section 11). Take topics from the Crush Files backlog in `topics.md` (or research new ones), never repeat one, and point them to the closest long-form or to "more Crush Files on the channel".
 4. **Scripts:** follow `STYLE.md`. Long-form is **≥1,300 words** (batches 03–04 measured ≈0.38 s per word with this voice; 8:00 is the mid-roll minimum). Shorts are 90–140 words. **Every script includes the like-and-subscribe line** near the middle (STYLE.md sections 4–5); it doesn't count toward the word minimum. Fact-check every claim with WebSearch and put a claim → source table under each script. Save to `scripts/YYYY-MM-DD-batch-NN.md`.
 5. **Narration plan:** write `/home/claude/proj/narration_bN.py`, copying the structure of `narration2.py`:
    - `VIDEOS` dict: each name maps to a list of scenes, and each scene has `key`, `scene`, `lines`, `opts`, `sfx` and `hold`.
@@ -35,6 +36,7 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
    - Spell for text-to-speech: numbers and years as words, phonetic spellings for hard names (e.g. "Cheek-shoo-loob"). `meta2.tts_to_text` maps them back for captions, so add new mappings there.
    - Then run `python3 voice.py <names...>`.
 6. **Scenes:** write `/home/claude/proj/scenes_bN_<topic>.py`. Every module needs a `SCENES` dict, and render.py loads any `scenes_*.py` automatically.
+   - **Crush Files scenes** import `kit3d` and `mc` (both libraries, not scene modules) and build every shot as: `kit3d.render(...)` the set (cache static cameras with `kit3d.CACHE`), then `mc.kai(...)` / `mc.crush(...)` at `kit3d.anchor(...)`. Animate with the camera (slow dolly or orbit), Kai's pose/expression changes on the narration beats, and 3D props (`heart`, `question_mark`, phones, brains built from spheres). Reuse sets across videos but vary camera, props and time of day so videos don't look identical.
    - **Libraries:** build from `core.py` (drawing and text), `common2.py` (props, `beats`, `phase`, `Layer`, chips, generic `title2`, `card2`, `end2`, `end_short2`) and `geo.py` (real-coastline `draw_map`, textured `globe`, `globe_xy` for pins, `map_rect`).
    - **Shorts layout:** keep content between 0.20H and 0.58H. Captions are burned in at 0.635H, the badge sits at 0.14H, and the hook text at 0.2H.
    - **Variety:** give each long-form its own visual motif and palette. Avoid near-identical videos; YouTube demonetizes "inauthentic", mass-produced content.
