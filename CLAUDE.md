@@ -5,7 +5,7 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
 ## Standing instructions from the owner (Myles)
 - A scheduled task runs this **every Wednesday, Friday, Saturday and Sunday** at 01:43 Africa/Lagos.
 - Each run: **25 new ideas**, then **at least 11 finished videos: 3 long-form + 8 Shorts**.
-- Upload **unlisted** through **Metricool**, all right after the run (≈30 s apart). The owner switches them to **public** in YouTube Studio once YouTube has finished processing them. No script review step, so nobody is there to answer questions. Make sensible decisions and record them in the report.
+- Upload **unlisted** right after the run with the channel's **own free uploader** (GitHub Actions + YouTube Data API, step 12); Metricool is only the fallback. The owner switches them to **public** in YouTube Studio once YouTube has finished processing them. No script review step, so nobody is there to answer questions. Make sensible decisions and record them in the report.
 - Every video, long-form and Short, says like and subscribe around the middle (owner, 2026-11-18). See STYLE.md sections 4-5.
 - Quality beats quantity, except that the minimum of 11 still stands. If a video fails QA and can't be fixed, replace it with another idea; don't publish it broken.
 
@@ -44,7 +44,14 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
 11. **Metadata:**
     - Captions and chapters: `python3 meta2.py OUT name=file.srt ...`.
     - Descriptions follow STYLE.md section 9 and always include "Narration uses an AI voice. Animation and music are original."
-12. **Upload via Metricool** (MCP tools `mcp__Metricool_Social_Media_Management__*`):
+12. **Upload with the channel's own uploader** (free; unlisted; long-forms first). This workspace can't reach Google's APIs, so the upload itself runs on GitHub Actions (`.github/workflows/youtube-upload.yml` runs `pipeline/yt_upload.py`), using the repo secrets `YT_CLIENT_ID`, `YT_CLIENT_SECRET` and `YT_REFRESH_TOKEN`.
+    1. **Queue:** `python3 pipeline/yt_upload.py manifest /home/claude/out/bN` writes `uploads.json` from `meta.json` (it picks up `<name>.mp4`, `thumbnail_<topic>.png` for long-forms and `<name>.srt`). Then `python3 pipeline/yt_upload.py check /home/claude/out/bN` must report every video ok. Every file must be under 100 MB (GitHub's limit); re-encode a long-form with a higher CRF if it isn't.
+    2. **Push the queue:** `git fetch origin main && git checkout -B upload origin/main`, copy `uploads.json` and every file it names into `queue/`, and commit and push one file per commit (`git push -f origin upload` for the first, plain pushes after). Push `queue/uploads.json` **last**, with `[upload]` in its commit message: that push starts the workflow, which uploads each video, then its thumbnail and captions. Go back to `main` afterwards.
+    3. **Wait for the result:** every minute run `git fetch -q origin upload && git show origin/upload:queue/results.json` until it has a `summary` or an `error` (allow up to 90 minutes; never end the turn while waiting). Each video gets an `id` and `url`, plus `thumbnail` and `captions` set to "ok" or the reason they failed (custom thumbnails need a phone-verified channel). Once everything is up, the workflow removes the media from the branch.
+    4. **Retry:** if some videos failed but a `summary` exists, push an empty commit to `upload` with `[upload]` in the message (`git commit --allow-empty -m "retry [upload]"`). The uploader skips videos that already have an id. Retry once.
+    5. **Fallback:** if `results.json` shows `"error": "auth: ..."` (secrets missing or revoked), or nothing appears within 90 minutes, upload whatever isn't up through Metricool (step 12b) and say so in the report.
+
+12b. **Metricool fallback** (MCP tools `mcp__Metricool_Social_Media_Management__*`). The free plan only publishes about 20 posts a month, then fails with "You have reached your Metricool account limit." If the first post fails with that error, stop creating posts and send the owner the files plus `upload_sheet_batchNN.txt` to upload by hand.
     1. `getBrandSettings`. Use the brand whose `networksData.youtubeData` is `UCyF8bKnMvQV_AzTCPJDxCGw`; brand 8106210 had it on 2026-11-14. Timezone: Africa/Lagos.
     2. **Host the files:**
        - Clone this repo with push access (`add_repo` KingMylesO/yt-whatif, access "push").
@@ -76,6 +83,7 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
 - `land_path` is cached by rect, so keep map rects constant and animate with canvas transforms instead.
 - A map with a salt rim or shrinking sea must clip land drawing to the map rect (see `scenes_med.med_map`).
 - `phase()` keeps the outgoing panel opaque until the next one has faded in, so draw panels in time order.
-- The browser pane can't open file pickers. Uploads go through Metricool, not YouTube Studio.
-- A YouTube Data API app made by us would lock uploads to private, so always use Metricool.
-- Captions (.srt) can't be uploaded through Metricool. Keep them in `/home/claude/out/bN` and mention them in the report.
+- The browser pane can't open file pickers, so uploads never go through YouTube Studio.
+- Since 2026-11-02, YouTube no longer locks uploads from unverified API projects to private (Data API revision history), so the channel's own uploader can post unlisted or public. The default quota is 100 uploads a day per project.
+- The uploader also posts captions (`captions.insert`). Metricool can't, so after a Metricool fallback keep the .srt files in `reports/bN_assets/` and mention them in the report.
+- Custom thumbnails fail until the channel is phone-verified; the uploader records the failure and carries on.
