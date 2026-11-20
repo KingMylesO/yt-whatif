@@ -96,7 +96,7 @@ Narration uses an AI voice. Animation and music are original.
 - **No real people:** no likenesses or voices of real people, no copyrighted characters or brands, and only original music and art.
 
 ## 11. The Crush Files (owner's series, 2026-11-20)
-- **What:** every Monday and Friday run, 2 of the 10 videos are *The Crush Files*: real science of crushes and attraction (what your brain and body do around a crush), told in second person like everything else. By default both are Shorts, taking 2 of the run's 4 extra standalone Shorts.
+- **What:** every **Friday** run (not Monday), 2 of the 10 videos are *The Crush Files*: real science of crushes and attraction (what your brain and body do around a crush), told in second person like everything else. By default both are Shorts, taking 2 of the run's 4 extra standalone Shorts.
 - **Look: 3D world, 2D character.** Backgrounds and objects are low-poly 3D sets (`pipeline/kit3d.py`: `bedroom()`, `hallway()`, or new sets built from `box`, `cylinder`, `sphere`, `heart`, `question_mark`). Characters are flat 2D with thick navy outlines (`pipeline/mc.py`), planted on the 3D floor with `kit3d.anchor()`.
 - **Kai** is the main character: 19, curious, royal-blue hoodie with the yellow "?" patch, coral headphones around his neck. Use `mc.kai(...)` with its poses (idle, wave, phone, think, shrug, point, cheeks, fist) and expressions (neutral, happy, blush, nervous, shocked, lovestruck, sad, curious, talk). Never redraw him differently: the character sheet is `reports/kai_assets/kai_character_sheet.png`.
 - **The Crush** is always the faceless glowing silhouette from `mc.crush(...)`, so every viewer can picture their own. Never give it a face, a name, a gender or an age.
