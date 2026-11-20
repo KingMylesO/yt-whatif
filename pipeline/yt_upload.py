@@ -4,23 +4,28 @@ Commands
   python yt_upload.py manifest OUT_DIR   write OUT_DIR/uploads.json from OUT_DIR/meta.json
   python yt_upload.py check DIR          validate DIR/uploads.json and its files (no network)
   python yt_upload.py upload DIR         upload everything in DIR/uploads.json
-  python yt_upload.py pending DIR        print "count=N", the videos in DIR/uploads.json not uploaded yet
+  python yt_upload.py pending DIR        print "count=N", the entries in DIR/uploads.json not done yet
 
 uploads.json
   {"videos": [
-    {"file": "b6_moon.mp4",             required, relative to DIR
-     "title": "What If ...?",           required, at most 100 characters, no < or >
-     "description": "...",             required, at most 5,000 characters, no < or >
+    {"file": "b6_moon.mp4",             a new upload: file, title and description are required
+     "title": "What If ...?",           at most 100 characters, no < or >
+     "description": "...",             at most 5,000 bytes, no < or >
      "tags": ["what if", "space"],      optional, 500 characters in total
      "privacy": "unlisted",             private | unlisted | public (default unlisted)
      "publish_at": null,                optional ISO 8601 UTC time; needs privacy "private"
      "thumbnail": "thumbnail_moon.png", optional; YouTube only accepts it on a phone-verified channel
-     "captions": "b6_moon.srt"}         optional English .srt
+     "captions": "b6_moon.srt"},        optional English .srt
+    {"video_id": "r0up4k5dYH4",         a video already on YouTube: only its thumbnail and/or
+     "title": "What If the Moon ...?",  captions are added, nothing is re-uploaded. If a title is
+     "thumbnail": "thumbnail_moon.png",  given, YouTube's title must match it, as a guard against
+     "captions": "b5_moon.srt"}         a wrong id
+
   ]}
 
 Credentials come from YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN (made once with
-yt_auth.py). Results go to DIR/results.json. A video that already has an id there is skipped,
-so running "upload" again only sends what is missing.
+yt_auth.py). Results go to DIR/results.json. An entry that already has an id there is skipped,
+so running "upload" again only does what is missing.
 """
 import json, os, sys, time
 
@@ -30,7 +35,8 @@ CHANNEL_ID = "UCyF8bKnMvQV_AzTCPJDxCGw"
 CATEGORY = "28"                       # Science & Technology
 PRIVACY = ("private", "unlisted", "public")
 RETRY_STATUS = {500, 502, 503, 504}
-STOP_REASONS = {"quotaExceeded", "uploadLimitExceeded", "dailyLimitExceeded", "rateLimitExceeded"}
+UPLOAD_CAP = {"uploadLimitExceeded"}  # the channel's daily upload cap: skip uploads, keep attaching
+STOP_ALL = {"quotaExceeded", "dailyLimitExceeded", "rateLimitExceeded"}   # API quota: stop everything
 CHUNK = 8 * 1024 * 1024
 EXTRAS = {"synthetic", "placement"}   # optional fields: "altered content: No", "no paid placement"
 MAX_FILE = 100 * 1024 * 1024 - 1      # GitHub's per-file limit; the queue lives in the repo
@@ -50,7 +56,9 @@ def save(path, data):
         json.dump(data, f, indent=1, ensure_ascii=False)
     os.replace(tmp, path)
 
-def is_short(v): return os.path.basename(v["file"]).startswith("short")
+def key(v): return v.get("file") or v.get("video_id")
+
+def is_short(v): return os.path.basename(v.get("file") or v.get("captions") or "").startswith("short")
 
 def watch_url(v, vid):
     return f"https://www.youtube.com/shorts/{vid}" if is_short(v) else f"https://www.youtube.com/watch?v={vid}"
@@ -79,9 +87,13 @@ def make_manifest(out):
 
 def problems(d, v):
     p = []
-    for k in ("file", "title", "description"):
-        if not v.get(k):
-            p.append(f"missing {k}")
+    if v.get("video_id"):
+        if not (v.get("thumbnail") or v.get("captions")):
+            p.append("an existing video needs a thumbnail or captions to add")
+    else:
+        for k in ("file", "title", "description"):
+            if not v.get(k):
+                p.append(f"missing {k}")
     for k in ("file", "thumbnail", "captions"):
         if v.get(k):
             f = os.path.join(d, v[k])
@@ -105,10 +117,10 @@ def problems(d, v):
     return p
 
 def pending(d):
-    """count=N for the GitHub workflow: queued videos with no YouTube id yet (0 when there's no queue)."""
+    """count=N for the GitHub workflow: queued entries with no YouTube id yet (0 when there's no queue)."""
     q = load(os.path.join(d, "uploads.json")) or {}
     done = (load(os.path.join(d, "results.json")) or {}).get("videos", {})
-    print(f"count={sum(1 for v in q.get('videos', []) if not done.get(v.get('file'), {}).get('id'))}")
+    print(f"count={sum(1 for v in q.get('videos', []) if not (done.get(key(v), {}).get('id') or done.get(key(v), {}).get('skip')))}")
 
 def check(d):
     q = load(os.path.join(d, "uploads.json"))
@@ -118,7 +130,8 @@ def check(d):
     for i, v in enumerate(q["videos"], 1):
         p = problems(d, v)
         bad += bool(p)
-        print(f"{i:2}. {'FAIL' if p else 'ok  '} {v.get('file')}: {v.get('title')}")
+        what = v.get("title") or f"add {' + '.join(k for k in ('thumbnail', 'captions') if v.get(k))}"
+        print(f"{i:2}. {'FAIL' if p else 'ok  '} {key(v)}: {what}")
         for x in p:
             print(f"      - {x}")
     print(f"{len(q['videos']) - bad} ok, {bad} with problems")
@@ -189,16 +202,43 @@ def send_video(yt, path, v):
             return resp["id"]
         except HttpError as e:
             text = str(e.content)
-            dropped = {x for x, key in (("synthetic", "containsSyntheticMedia"), ("placement", "paidProductPlacement"))
-                       if x in extras and e.resp.status == 400 and key in text}
+            dropped = {x for x, k in (("synthetic", "containsSyntheticMedia"), ("placement", "paidProductPlacement"))
+                       if x in extras and e.resp.status == 400 and k in text}
             if not dropped:
                 raise
             print(f"    YouTube rejected {sorted(dropped)}; retrying without", flush=True)
             extras -= dropped
 
-def upload(d):
+def attach(yt, d, v, r, vid):
+    """Set the thumbnail and add captions. Raises HttpError only for API-quota stops."""
     from googleapiclient.errors import HttpError
     from googleapiclient.http import MediaFileUpload
+    if v.get("thumbnail") and r.get("thumbnail") != "ok":
+        try:
+            p = os.path.join(d, v["thumbnail"])
+            yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(
+                p, mimetype="image/png" if p.lower().endswith(".png") else "image/jpeg")).execute()
+            r["thumbnail"] = "ok"
+        except HttpError as e:
+            if reason(e) in STOP_ALL:
+                raise
+            r["thumbnail"] = f"failed: {e.resp.status} {reason(e)}"
+        print(f"    thumbnail {r['thumbnail']}")
+    if v.get("captions") and r.get("captions") != "ok":
+        try:
+            yt.captions().insert(part="snippet", body=dict(snippet=dict(
+                videoId=vid, language="en", name="English", isDraft=False)),
+                media_body=MediaFileUpload(os.path.join(d, v["captions"]),
+                                           mimetype="application/octet-stream")).execute()
+            r["captions"] = "ok"
+        except HttpError as e:
+            if reason(e) in STOP_ALL:
+                raise
+            r["captions"] = f"failed: {e.resp.status} {reason(e)}"
+        print(f"    captions {r['captions']}")
+
+def upload(d):
+    from googleapiclient.errors import HttpError
     q = check(d)
     rpath = os.path.join(d, "results.json")
     res = load(rpath, {}) or {}
@@ -213,48 +253,53 @@ def upload(d):
     except Exception as e:
         res["error"] = f"auth: {e}"; save(rpath, res); print(res["error"]); sys.exit(2)
     res.pop("error", None)
-    failed = 0
+    failed, capped = 0, False
     for v in q["videos"]:
-        r = res["videos"].setdefault(v["file"], {})
-        if r.get("id"):
-            print(f"skip {v['file']}: already uploaded ({r['url']})"); continue
-        print(f"upload {v['file']}: {v['title']}", flush=True)
+        r = res["videos"].setdefault(key(v), {})
+        if r.get("id") or r.get("skip"):
+            print(f"skip {key(v)}: {'done (' + r['url'] + ')' if r.get('id') else r.get('error')}"); continue
         try:
-            vid = send_video(yt, os.path.join(d, v["file"]), v)
+            if v.get("video_id"):
+                vid = v["video_id"]
+                print(f"attach to {vid} ({v.get('captions') or v.get('thumbnail')})", flush=True)
+                items = yt.videos().list(part="snippet", id=vid).execute().get("items", [])
+                live = items[0]["snippet"]["title"] if items else None
+                if live is None or (v.get("title") and live.strip().casefold() != v["title"].strip().casefold()):
+                    r["error"] = "video not found" if live is None else f"title mismatch: YouTube has {live!r}"
+                    r["skip"] = True       # permanent: don't retry every 4 hours
+                    failed += 1; save(rpath, res); print(f"    SKIPPED: {r['error']}"); continue
+                attach(yt, d, v, r, vid)
+            else:
+                if capped:
+                    r["error"] = "waiting: YouTube's daily upload limit"; failed += 1; continue
+                print(f"upload {v['file']}: {v['title']}", flush=True)
+                try:
+                    vid = send_video(yt, os.path.join(d, v["file"]), v)
+                except HttpError as e:
+                    if reason(e) in UPLOAD_CAP:
+                        capped = True
+                        r["error"] = "waiting: YouTube's daily upload limit"; failed += 1; save(rpath, res)
+                        print("    YouTube's daily upload limit is reached; uploads wait for the next run")
+                        continue
+                    raise
+                # record the id at once, so a later failure can never cause a second upload
+                r.update(id=vid, url=watch_url(v, vid), title=v["title"], privacy=v.get("privacy", "unlisted"))
+                r.pop("error", None); save(rpath, res)
+                print(f"    done: {r['url']}", flush=True)
+                attach(yt, d, v, r, vid)
         except HttpError as e:
             r["error"] = f"{e.resp.status} {reason(e) or str(e)[:300]}"; failed += 1; save(rpath, res)
             print(f"    FAILED: {r['error']}")
-            if reason(e) in STOP_REASONS:
-                print("    YouTube limit reached; stopping"); break
+            if reason(e) in STOP_ALL:
+                print("    API quota reached; stopping"); break
             continue
         except Exception as e:
             r["error"] = str(e)[:300]; failed += 1; save(rpath, res); print(f"    FAILED: {r['error']}"); continue
-        r.update(id=vid, url=watch_url(v, vid), title=v["title"], privacy=v.get("privacy", "unlisted"))
+        r.update(id=vid, url=watch_url(v, vid))
         r.pop("error", None)
         save(rpath, res)
-        print(f"    done: {r['url']}", flush=True)
-        if v.get("thumbnail"):
-            try:
-                p = os.path.join(d, v["thumbnail"])
-                yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(
-                    p, mimetype="image/png" if p.lower().endswith(".png") else "image/jpeg")).execute()
-                r["thumbnail"] = "ok"
-            except HttpError as e:
-                r["thumbnail"] = f"failed: {e.resp.status} {reason(e)}"
-            print(f"    thumbnail {r['thumbnail']}")
-        if v.get("captions"):
-            try:
-                yt.captions().insert(part="snippet", body=dict(snippet=dict(
-                    videoId=vid, language="en", name="English", isDraft=False)),
-                    media_body=MediaFileUpload(os.path.join(d, v["captions"]),
-                                               mimetype="application/octet-stream")).execute()
-                r["captions"] = "ok"
-            except HttpError as e:
-                r["captions"] = f"failed: {e.resp.status} {reason(e)}"
-            print(f"    captions {r['captions']}")
-        save(rpath, res)
-    done = sum(1 for v in q["videos"] if res["videos"].get(v["file"], {}).get("id"))
-    res["summary"] = f"{done} of {len(q['videos'])} uploaded"
+    done = sum(1 for v in q["videos"] if res["videos"].get(key(v), {}).get("id"))
+    res["summary"] = f"{done} of {len(q['videos'])} done"
     save(rpath, res)
     print(res["summary"])
     sys.exit(1 if failed else 0)
