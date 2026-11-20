@@ -2,12 +2,14 @@
 
 This repo makes and uploads videos for the YouTube channel **Myles AI stories** (science what-ifs: space, Earth, the human body). Read this file, then `STYLE.md` and `topics.md`, before doing anything.
 
+> **Owner update, 2026-11-20. This overrides the scheduled task's own prompt.** That prompt still says four runs a week, 25 ideas, at least 11 videos (3 long-form + 8 Shorts) and uploads through Metricool. The owner cut the volume to fit the Claude plan's usage limits. Follow this runbook instead: **15 ideas, 10 videos (2 long-form + 8 Shorts)**, at least one long-form about something important happening right now (steps 2–3), and the channel's own uploader (step 12).
+
 ## Standing instructions from the owner (Myles)
-- A scheduled task runs this **every Wednesday, Friday, Saturday and Sunday** at 01:43 Africa/Lagos.
-- Each run: **25 new ideas**, then **at least 11 finished videos: 3 long-form + 8 Shorts**.
+- A scheduled task runs this **every Monday and Friday** at 01:43 Africa/Lagos (owner, 2026-11-20; it ran four times a week before).
+- Each run: **15 new ideas**, then **at least 10 finished videos: 2 long-form + 8 Shorts** (owner, 2026-11-20). One full run should fit inside one 5-hour usage window, so don't over-build: reuse helpers from earlier scene modules where they fit.
 - Upload **unlisted** right after the run with the channel's **own free uploader** (GitHub Actions + YouTube Data API, step 12); Metricool is only the fallback. The owner switches them to **public** in YouTube Studio once YouTube has finished processing them. No script review step, so nobody is there to answer questions. Make sensible decisions and record them in the report.
 - Every video, long-form and Short, says like and subscribe around the middle (owner, 2026-11-18). See STYLE.md sections 4-5.
-- Quality beats quantity, except that the minimum of 11 still stands. If a video fails QA and can't be fixed, replace it with another idea; don't publish it broken.
+- Quality beats quantity, except that the minimum of 10 still stands. If a video fails QA and can't be fixed, replace it with another idea; don't publish it broken.
 
 ## Workspace facts
 - Cloud workspace: 2 CPU cores, no GPU. Network allowlist: GitHub (including raw.githubusercontent.com) and pip only. huggingface.co is blocked. WebSearch and WebFetch work for research.
@@ -17,10 +19,13 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
 ## The run, step by step
 0. **Setup (≈5 min):** `bash pipeline/setup.sh`. It installs packages, downloads the Kokoro voice and the Natural Earth maps, and renders a self-test Short. It must print `SETUP OK`.
 1. **Batch number:** the next N after the last batch in `topics.md`. Use names `bN_<slug>` for long-form videos and `short_bN_<slug>` for Shorts. A name starting with `short` renders 1080×1920; anything else renders 1920×1080.
-2. **25 ideas:** research fresh what-ifs, mixing space, Earth and body. Never repeat anything in `topics.md`. For each idea give a one-line hook, why it works, and 2–3 real sources. Save them to `ideas/YYYY-MM-DD.md`.
-3. **Pick 11 videos:**
-   - 3 long-form topics, each with 2 Shorts: a teaser cut from it and a standalone mini what-if on the same theme.
-   - 2 more standalone Shorts from the idea list, each pointing to the closest long-form.
+2. **15 ideas:** research fresh what-ifs, mixing space, Earth and body. Never repeat anything in `topics.md`. For each idea give a one-line hook, why it works, and 2–3 real sources. Save them to `ideas/YYYY-MM-DD.md`.
+   - **Something important happening (owner, 2026-11-20):** at least 5 of the 15 hang off something big that is really happening: a discovery, launch, mission, record, natural event or tech breakthrough from roughly the last 2–3 weeks, or one coming up soon. Find them with WebSearch for the current dates, and name what happened and when in the hook ("Last week, astronomers found…" → "What if…?").
+   - Date the event and cite a primary source (space agency, journal, university, official body). Say plainly what is confirmed and what is still unknown.
+   - Events with real victims (disasters, wars, outbreaks): explain the science calmly, never sensationalise, and skip any idea that would trade on people's suffering.
+3. **Pick 10 videos:**
+   - 2 long-form topics, each with 2 Shorts: a teaser cut from it and a standalone mini what-if on the same theme. **At least one long-form comes from the "happening now" ideas.**
+   - 4 more standalone Shorts from the idea list, each pointing to the closest long-form. At least 2 of them come from the "happening now" ideas.
 4. **Scripts:** follow `STYLE.md`. Long-form is **≥1,300 words** (batches 03–04 measured ≈0.38 s per word with this voice; 8:00 is the mid-roll minimum). Shorts are 90–140 words. **Every script includes the like-and-subscribe line** near the middle (STYLE.md sections 4–5); it doesn't count toward the word minimum. Fact-check every claim with WebSearch and put a claim → source table under each script. Save to `scripts/YYYY-MM-DD-batch-NN.md`.
 5. **Narration plan:** write `/home/claude/proj/narration_bN.py`, copying the structure of `narration2.py`:
    - `VIDEOS` dict: each name maps to a list of scenes, and each scene has `key`, `scene`, `lines`, `opts`, `sfx` and `hold`.
@@ -66,16 +71,16 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
        - Metricool copies the media to its own storage the moment the post is created.
        - For long-form videos, include `videoThumbnailUrl`. If you get `VIDEO_THUMBNAIL_NOT_APPLICABLE` (channel not verified yet), retry without it.
     4. **When to post:**
-       - Upload all 11 straight away: the first one ~3 minutes after scheduling, then 30 seconds apart. Metricool rounds to whole minutes, so that works out at about 2 per minute.
-       - Put the 3 long-form videos first, then the Shorts.
+       - Upload all 10 straight away: the first one ~3 minutes after scheduling, then 30 seconds apart. Metricool rounds to whole minutes, so that works out at about 2 per minute.
+       - Put the 2 long-form videos first, then the Shorts.
     5. **Clean up:** force-push an empty commit to `media` so the links stop working.
-    6. **Verify** with `getScheduledPosts`: wait until all 11 show `PUBLISHED` (uploaded as unlisted) and note each `publicUrl`.
+    6. **Verify** with `getScheduledPosts`: wait until all 10 show `PUBLISHED` (uploaded as unlisted) and note each `publicUrl`.
 13. **Record:**
     - Append the batch to `topics.md` (titles plus scheduled dates).
     - Commit `pipeline/narration_bN.py`, `pipeline/scenes_bN_*.py`, the ideas, the scripts and `reports/YYYY-MM-DD.md` to `main`, then push.
     - If the Projects tool is available, write the report to the "YT" project as `claude/batch-NN-production.md`.
 14. **Finish:** send one short summary covering:
-    - the 11 titles with their YouTube links (unlisted);
+    - the 10 titles with their YouTube links (unlisted);
     - a reminder to the owner to switch them to **Public** in YouTube Studio once processing finishes (Content → select them → Edit → Visibility → Public);
     - anything skipped or replaced, and any decisions you made.
 

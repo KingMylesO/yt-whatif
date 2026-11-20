@@ -9,13 +9,13 @@ This is the rulebook for every script, title and thumbnail on the channel, and e
 - **Format:** faceless. Narration (the Kokoro "Heart" AI voice) over code-drawn animation with original music.
 - **Channel:** Myles AI stories.
 
-## 2. Output cadence (owner's decision, 2026-11-14)
-- **When:** four runs a week, on Wednesday, Friday, Saturday and Sunday.
+## 2. Output cadence (owner's decision, 2026-11-20; four runs a week before that)
+- **When:** two runs a week, on Monday and Friday at 01:43 Africa/Lagos.
 - **What each run makes:**
-  - 25 new ideas.
-  - 11 or more videos: 3 long-form plus 8 Shorts.
-  - Each long-form gets a teaser Short and a standalone Short, and the run adds 2 extra standalone Shorts.
-- **Release:** uploaded **unlisted** via Metricool right after each run. The owner switches them to public in Studio once YouTube has finished processing them.
+  - 15 new ideas, at least 5 of them about something important that is really happening right now (CLAUDE.md step 2).
+  - 10 or more videos: 2 long-form plus 8 Shorts.
+  - Each long-form gets a teaser Short and a standalone Short, and the run adds 4 extra standalone Shorts. At least one long-form and two of the extra Shorts are about something happening now.
+- **Release:** uploaded **unlisted** with the channel's own uploader (CLAUDE.md step 12) right after each run. The owner switches them to public in Studio once YouTube has finished processing them.
 - **Long-form:** 8–12 minutes, 1,300–1,900 words. Batches 03–04 measured about 0.38 s per word at this voice's pace, so **write at least 1,300 words** to clear 8:00, the minimum for mid-roll ads. Add real "wait, really?" facts rather than padding.
 - **Shorts:** 30–55 seconds, 90–140 words, ending by pointing to the long video.
 - **Like and subscribe:** every video, long-form and Short, asks for it once around the middle (owner, 2026-11-18). See sections 4–5.
@@ -52,6 +52,7 @@ Vertical 9:16 with burned-in captions, and a visual change every 1–2 seconds.
 - Attribute claims that come from one person to that person.
 - Put a claim → source table under every script.
 - **No health or medical advice.** Body topics are explainers, never "you should do X".
+- **"Happening now" topics:** give the date of the event, cite the primary source (agency, journal, university or official body) as well as any news coverage, and say plainly what's confirmed and what's still unknown. Early news gets corrected, so prefer the primary source's own wording. Treat events with real victims with care: explain the science, never sensationalise.
 
 ## 7. Titles
 Keep titles under 60 characters. Formulas:
