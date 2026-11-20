@@ -4,6 +4,7 @@ Commands
   python yt_upload.py manifest OUT_DIR   write OUT_DIR/uploads.json from OUT_DIR/meta.json
   python yt_upload.py check DIR          validate DIR/uploads.json and its files (no network)
   python yt_upload.py upload DIR         upload everything in DIR/uploads.json
+  python yt_upload.py pending DIR        print "count=N", the videos in DIR/uploads.json not uploaded yet
 
 uploads.json
   {"videos": [
@@ -102,6 +103,12 @@ def problems(d, v):
     if v.get("publish_at") and v.get("privacy") != "private":
         p.append('publish_at needs privacy "private"')
     return p
+
+def pending(d):
+    """count=N for the GitHub workflow: queued videos with no YouTube id yet (0 when there's no queue)."""
+    q = load(os.path.join(d, "uploads.json")) or {}
+    done = (load(os.path.join(d, "results.json")) or {}).get("videos", {})
+    print(f"count={sum(1 for v in q.get('videos', []) if not done.get(v.get('file'), {}).get('id'))}")
 
 def check(d):
     q = load(os.path.join(d, "uploads.json"))
@@ -254,6 +261,7 @@ def upload(d):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3 or sys.argv[1] not in ("manifest", "check", "upload"):
+    cmds = {"manifest": make_manifest, "check": check, "upload": upload, "pending": pending}
+    if len(sys.argv) != 3 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
-    {"manifest": make_manifest, "check": check, "upload": upload}[sys.argv[1]](sys.argv[2])
+    cmds[sys.argv[1]](sys.argv[2])

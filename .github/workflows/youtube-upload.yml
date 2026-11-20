@@ -1,12 +1,15 @@
-# Uploads the videos queued on the `upload` branch to YouTube (pipeline/yt_upload.py).
-# Runs when a push to `upload` has "[upload]" in its commit message, or by hand from the
-# Actions tab (Run workflow > branch: upload), which retries anything not yet uploaded.
+# Uploads the videos queued in queue/ on the `upload` branch to YouTube (pipeline/yt_upload.py).
+# Runs when a push to `upload` has "[upload]" in its commit message, every 4 hours to retry
+# anything still waiting (YouTube caps uploads per channel per day), and by hand from the
+# Actions tab (Run workflow). It always uses the uploader from main.
 # Needs the repo secrets YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN (see pipeline/yt_auth.py).
 name: YouTube upload
 
 on:
   push:
     branches: [upload]
+  schedule:
+    - cron: "23 */4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,41 +21,49 @@ concurrency:
 
 jobs:
   upload:
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[upload]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[upload]')
     runs-on: ubuntu-latest
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: upload
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      - name: Get the uploader from main
+        run: |
+          git fetch -q --depth 1 origin main
+          git show origin/main:pipeline/yt_upload.py > "$RUNNER_TEMP/yt_upload.py"
+
+      - name: Anything waiting?
+        id: pending
+        run: python "$RUNNER_TEMP/yt_upload.py" pending queue | tee -a "$GITHUB_OUTPUT"
+
       - name: Install the YouTube API client
+        if: steps.pending.outputs.count != '0'
         run: pip install --quiet "google-api-python-client>=2.150" "google-auth>=2.35"
 
       - name: Upload to YouTube
+        if: steps.pending.outputs.count != '0'
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python pipeline/yt_upload.py upload queue
+        run: python "$RUNNER_TEMP/yt_upload.py" upload queue
 
       - name: Save results (and drop the media once everything is up)
-        if: always()
+        if: always() && steps.pending.outputs.count != '0'
         run: |
           [ -f queue/results.json ] || exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          done=$(python - <<'EOF'
-          import json
-          q = json.load(open("queue/uploads.json")); r = json.load(open("queue/results.json")).get("videos", {})
-          print("1" if all(r.get(v["file"], {}).get("id") for v in q["videos"]) else "0")
-          EOF
-          )
-          if [ "$done" = "1" ]; then
+          left=$(python "$RUNNER_TEMP/yt_upload.py" pending queue)
+          if [ "$left" = "count=0" ]; then
             git rm -q --ignore-unmatch queue/*.mp4 queue/*.png queue/*.jpg queue/*.srt
           fi
           git add queue/results.json
           git commit -q -m "YouTube upload results" || exit 0
-          git push -q origin "HEAD:${GITHUB_REF_NAME}"
+          git push -q origin HEAD:upload
