@@ -25,8 +25,11 @@
 - What If All the Ice on Earth Melted? (long) — Shorts: What If Earth's Ice All Melted Tomorrow?; A Lake Hidden Under 4 km of Antarctic Ice (Lake Vostok); It Rained for 2 Million Years (Carnian Pluvial Episode)
 - What If All Your Bacteria Suddenly Vanished? (long) — Shorts: All Your Bacteria Vanish Overnight; You're About Half Bacteria
 
+## The Crush Files
+- #1 What Your Brain Does When Your Crush Texts Back (Short, made 2026-11-20) — queued: YouTube's daily upload limit; uploads automatically within a day (unlisted)
+
 # Crush Files backlog (Kai, 3D-world/2D-character style; use 2 per run, never repeat)
-Butterflies in your stomach (adrenaline, gut blood flow) · Why you blush around your crush · Your heart rate when they walk in · What your brain does when they text back (dopamine, reward) · Why you can't stop thinking about them · Why you get clumsy and forget words · Why time flies when you're together · Do your pupils really grow when you see them? · Is love at first sight real? · Why rejection literally hurts (social pain studies) · Why you replay every conversation at 3 a.m. · Why a crush's voice sounds different · Why you notice their name everywhere (attention bias) · Why crushes fade · The science of a first-text panic
+Butterflies in your stomach (adrenaline, gut blood flow) · Why you blush around your crush · Your heart rate when they walk in · ~~What your brain does when they text back (dopamine, reward)~~ (used: #1, 2026-11-20) · Why you can't stop thinking about them · Why you get clumsy and forget words · Why time flies when you're together · Do your pupils really grow when you see them? · Is love at first sight real? · Why rejection literally hurts (social pain studies) · Why you replay every conversation at 3 a.m. · Why a crush's voice sounds different · Why you notice their name everywhere (attention bias) · Why crushes fade · The science of a first-text panic
 
 # Backlog (owner's ideas, use first)
 Space: Earth stopped spinning · falling into Jupiter · a rogue planet enters the Solar System · a moon with its own moon ("moonmoons") · Earth orbiting two suns · a day longer than a year, like Venus · Earth inside a nebula
