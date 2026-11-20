@@ -2,9 +2,10 @@
 import json, re, sys
 sys.path.insert(0, "/home/claude/proj")
 import glob as _glob, importlib as _il, os as _os
-CHAPTERS = {}
+CHAPTERS = {}; TTS_EXTRA = {}
 for _p in sorted(_glob.glob("/home/claude/proj/narration*.py")):
-    CHAPTERS.update(getattr(_il.import_module(_os.path.basename(_p)[:-3]), "CHAPTERS", {}))
+    _m = _il.import_module(_os.path.basename(_p)[:-3])
+    CHAPTERS.update(getattr(_m, "CHAPTERS", {})); TTS_EXTRA.update(getattr(_m, "TTS_MAP", {}))  # batch 05+: per-file TTS -> caption maps
 B = "/home/claude/proj/build"; OUT = "/home/claude/out/batch2"
 
 def mmss(t): t = int(t); return f"{t // 60}:{t % 60:02d}"
@@ -32,6 +33,7 @@ def tts_to_text(s):
                 "nineteen-seventies": "1970s", "nineteen-nineties": "1990s", "mid two-thousands": "mid-2000s", "early two-thousands": "early 2000s",
                 "two thousand one": "2001", "two thousand three": "2003", "two thousand nine": "2009", "twenty ten": "2010", "twenty eleven": "2011",
                 "twenty thirteen": "2013", "twenty seventeen": "2017", "twenty twenty-one": "2021"})
+    rep.update(TTS_EXTRA)
     for a in sorted(rep, key=len, reverse=True): s = s.replace(a, rep[a])
     return s
 
@@ -68,6 +70,6 @@ if __name__ == "__main__":
     for a in sys.argv[2:]:
         if "=" in a:
             name, fn = a.split("=", 1); srt(name, f"{OUT}/{fn}")
-            ch, tot = chapters(name); print(f"== {name} ({tot})\n{ch}\n")
+            if name in CHAPTERS: ch, tot = chapters(name); print(f"== {name} ({tot})\n{ch}\n")
         else:
             print(a, length(a))

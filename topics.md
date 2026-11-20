@@ -20,7 +20,12 @@
 - What If You Shrank Down Inside a Computer Chip? (long) — Shorts: What If You Shrank Inside a Computer Chip?; Your Chips Are Printed With Exploding Tin (EUV); What If Moore's Law Never Slowed Down?
 - What If a Cosmic Ray Flipped a Bit in Your Computer? (long) — Shorts: What If a Cosmic Ray Hit Your Computer?; The Election Glitch That Added 4,096 Votes (NOT uploaded: Metricool account limit; file on branch media-b04 for manual upload)
 
+## Batch 05 (2026-11-20) — 7 of 11 uploaded Unlisted via Metricool on 2026-11-20 (17:59–18:04 WAT); 4 Shorts (ice teaser, rain, microbes teaser, cells) hit the Metricool account limit
+- What If the Moon Disappeared? (long) — Shorts: What If the Moon Vanished Tonight?; The Moon Is Slowly Leaving Us (lunar laser ranging); What If Pluto Replaced Our Moon?
+- What If All the Ice on Earth Melted? (long) — Shorts: What If Earth's Ice All Melted Tomorrow?; A Lake Hidden Under 4 km of Antarctic Ice (Lake Vostok); It Rained for 2 Million Years (Carnian Pluvial Episode)
+- What If All Your Bacteria Suddenly Vanished? (long) — Shorts: All Your Bacteria Vanish Overnight; You're About Half Bacteria
+
 # Backlog (owner's ideas, use first)
-Space: the Moon disappeared · Earth stopped spinning · falling into Jupiter · a rogue planet enters the Solar System · a moon with its own moon ("moonmoons") · Earth orbiting two suns · a day longer than a year, like Venus · Pluto replacing our Moon · Earth inside a nebula
-Earth: all the ice melted · it never stopped raining · every volcano erupted at once · oceans twice as deep · every ant disappeared · a fast-spinning early Earth with few-hour days
-Human body: only drinking seawater · 10 years in space · frozen and woken in 100 years · blue copper-based blood like an octopus · breathing with a bird's lungs · all your body's bacteria vanished · humans kept their tails · a tardigrade's survival tricks
+Space: Earth stopped spinning · falling into Jupiter · a rogue planet enters the Solar System · a moon with its own moon ("moonmoons") · Earth orbiting two suns · a day longer than a year, like Venus · Earth inside a nebula
+Earth: it never stopped raining · every volcano erupted at once · oceans twice as deep · every ant disappeared · a fast-spinning early Earth with few-hour days
+Human body: only drinking seawater · 10 years in space · frozen and woken in 100 years · blue copper-based blood like an octopus · breathing with a bird's lungs · humans kept their tails · a tardigrade's survival tricks

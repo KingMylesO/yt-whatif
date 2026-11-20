@@ -58,6 +58,13 @@ PRESETS = {
     "chip_s": dict(chords=[[52, 59, 64, 71], [48, 55, 64, 67], [55, 62, 66, 71], [50, 57, 62, 69]], bar=3.0, step=0.1875, bright=1.0),
     "cosmic": dict(chords=[[44, 51, 56, 59], [40, 47, 52, 56], [42, 49, 54, 57], [39, 46, 51, 54]], bar=8.0, step=0.5, bright=0.7),
     "cosmic_s": dict(chords=[[44, 51, 56, 59], [40, 47, 52, 56], [42, 49, 54, 57], [39, 46, 51, 54]], bar=4.0, step=0.25, bright=0.9),
+    # batch 05
+    "moon": dict(chords=[[45, 52, 57, 64], [41, 48, 57, 60], [43, 50, 55, 62], [40, 47, 55, 59]], bar=8.0, step=0.5, bright=0.5),
+    "moon_s": dict(chords=[[45, 52, 57, 64], [41, 48, 57, 60], [43, 50, 55, 62], [40, 47, 55, 59]], bar=4.0, step=0.25, bright=0.85),
+    "ice": dict(chords=[[52, 59, 63, 66], [49, 56, 61, 64], [45, 52, 57, 64], [47, 54, 59, 63]], bar=8.0, step=0.5, bright=0.65),
+    "ice_s": dict(chords=[[52, 59, 63, 66], [49, 56, 61, 64], [45, 52, 57, 64], [47, 54, 59, 63]], bar=4.0, step=0.25, bright=0.9),
+    "microbe": dict(chords=[[48, 55, 62, 64], [53, 60, 64, 69], [50, 57, 60, 65], [55, 62, 65, 67]], bar=6.0, step=0.375, bright=0.8),
+    "microbe_s": dict(chords=[[48, 55, 62, 64], [53, 60, 64, 69], [50, 57, 60, 65], [55, 62, 65, 67]], bar=3.0, step=0.1875, bright=0.95),
 }
 PRESET_FOR = {"long": "space", "short_sun": "short", "short_sleep": "sleep",
               "b2_trees": "forest", "b2_asteroid": "space", "b2_med": "sea",
