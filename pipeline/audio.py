@@ -65,6 +65,8 @@ PRESETS = {
     "ice_s": dict(chords=[[52, 59, 63, 66], [49, 56, 61, 64], [45, 52, 57, 64], [47, 54, 59, 63]], bar=4.0, step=0.25, bright=0.9),
     "microbe": dict(chords=[[48, 55, 62, 64], [53, 60, 64, 69], [50, 57, 60, 65], [55, 62, 65, 67]], bar=6.0, step=0.375, bright=0.8),
     "microbe_s": dict(chords=[[48, 55, 62, 64], [53, 60, 64, 69], [50, 57, 60, 65], [55, 62, 65, 67]], bar=3.0, step=0.1875, bright=0.95),
+    # The Crush Files (sweet, bouncy major)
+    "crush_s": dict(chords=[[53, 60, 64, 69], [50, 57, 62, 65], [55, 62, 67, 71], [52, 59, 64, 67]], bar=3.2, step=0.2, bright=1.0),
 }
 PRESET_FOR = {"long": "space", "short_sun": "short", "short_sleep": "sleep",
               "b2_trees": "forest", "b2_asteroid": "space", "b2_med": "sea",
