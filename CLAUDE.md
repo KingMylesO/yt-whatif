@@ -88,4 +88,5 @@ This repo makes and uploads videos for the YouTube channel **Myles AI stories** 
 - The browser pane can't open file pickers, so uploads never go through YouTube Studio.
 - Since 2026-11-02, YouTube no longer locks uploads from unverified API projects to private (Data API revision history), so the channel's own uploader can post unlisted or public. The default quota is 100 uploads a day per project.
 - The uploader also posts captions (`captions.insert`). Metricool can't, so after a Metricool fallback keep the .srt files in `reports/bN_assets/` and mention them in the report.
-- Custom thumbnails fail until the channel is phone-verified; the uploader records the failure and carries on.
+- The channel was phone-verified on 2026-11-20, so custom thumbnails now work (the batch 04–05 long-forms got theirs that day). If a thumbnail fails, the uploader records it and carries on.
+- To add a thumbnail or captions to a video that's already on YouTube, queue an entry with `video_id` (plus `title` as a guard) instead of `file`; see the top of `pipeline/yt_upload.py`.
