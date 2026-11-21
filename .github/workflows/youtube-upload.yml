@@ -1,5 +1,5 @@
 # Uploads the videos queued in queue/ on the `upload` branch to YouTube (pipeline/yt_upload.py).
-# Runs when a push to `upload` has "[upload]" in its commit message, every 4 hours to retry
+# Runs when a push to `upload` has "[upload]" in its commit message, every hour to retry
 # anything still waiting (YouTube caps uploads per channel per day), and by hand from the
 # Actions tab (Run workflow). It always uses the uploader from main.
 # Needs the repo secrets YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN (see pipeline/yt_auth.py).
@@ -9,7 +9,7 @@ on:
   push:
     branches: [upload]
   schedule:
-    - cron: "23 */4 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
 
 permissions:
