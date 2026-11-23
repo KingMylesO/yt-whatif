@@ -25,8 +25,12 @@
 - What If All the Ice on Earth Melted? (long) — Shorts: What If Earth's Ice All Melted Tomorrow?; A Lake Hidden Under 4 km of Antarctic Ice (Lake Vostok); It Rained for 2 Million Years (Carnian Pluvial Episode)
 - What If All Your Bacteria Suddenly Vanished? (long) — Shorts: All Your Bacteria Vanish Overnight; You're About Half Bacteria
 
+## Batch 06 (2026-11-23) — all 10 uploaded Unlisted with the channel's own uploader on 2026-11-23 (~02:55 WAT)
+- What If You Lived on Mercury? (long; BepiColombo arrival, 21 Nov 2026) — Shorts: We Just Reached Mercury. Could You Live There?; On Mercury, One Day Lasts Two Years; What If You Texted Voyager 1 Right Now? (one light-day, 18 Nov 2026); We Hit an Asteroid. Now We're Checking the Damage (Hera at Dimorphos); A Star Just Exploded. What If One Went Off Near Us? (SN 2026ahvu)
+- What If You Lived in Space for 10 Years? (long; China's first year-long Tiangong stay) — Shorts: What If You Lived in Space for 10 Years?; Why Astronauts Come Home Taller; What If the Ozone Layer Disappeared? (2026 ozone hole)
+
 ## The Crush Files
-- #1 What Your Brain Does When Your Crush Texts Back (Short, made 2026-11-20) — queued: YouTube's daily upload limit; uploads automatically within a day (unlisted)
+- #1 What Your Brain Does When Your Crush Texts Back (Short, made 2026-11-20) — uploaded Unlisted 2026-11-21: https://www.youtube.com/shorts/T460l6IQHBI
 
 # Crush Files backlog (Kai, 3D-world/2D-character style; use 2 per run, never repeat)
 Butterflies in your stomach (adrenaline, gut blood flow) · Why you blush around your crush · Your heart rate when they walk in · ~~What your brain does when they text back (dopamine, reward)~~ (used: #1, 2026-11-20) · Why you can't stop thinking about them · Why you get clumsy and forget words · Why time flies when you're together · Do your pupils really grow when you see them? · Is love at first sight real? · Why rejection literally hurts (social pain studies) · Why you replay every conversation at 3 a.m. · Why a crush's voice sounds different · Why you notice their name everywhere (attention bias) · Why crushes fade · The science of a first-text panic
@@ -34,4 +38,4 @@ Butterflies in your stomach (adrenaline, gut blood flow) · Why you blush around
 # Backlog (owner's ideas, use first)
 Space: Earth stopped spinning · falling into Jupiter · a rogue planet enters the Solar System · a moon with its own moon ("moonmoons") · Earth orbiting two suns · a day longer than a year, like Venus · Earth inside a nebula
 Earth: it never stopped raining · every volcano erupted at once · oceans twice as deep · every ant disappeared · a fast-spinning early Earth with few-hour days
-Human body: only drinking seawater · 10 years in space · frozen and woken in 100 years · blue copper-based blood like an octopus · breathing with a bird's lungs · humans kept their tails · a tardigrade's survival tricks
+Human body: only drinking seawater · frozen and woken in 100 years · blue copper-based blood like an octopus · breathing with a bird's lungs · humans kept their tails · a tardigrade's survival tricks

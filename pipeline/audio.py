@@ -67,6 +67,13 @@ PRESETS = {
     "microbe_s": dict(chords=[[48, 55, 62, 64], [53, 60, 64, 69], [50, 57, 60, 65], [55, 62, 65, 67]], bar=3.0, step=0.1875, bright=0.95),
     # The Crush Files (sweet, bouncy major)
     "crush_s": dict(chords=[[53, 60, 64, 69], [50, 57, 62, 65], [55, 62, 67, 71], [52, 59, 64, 67]], bar=3.2, step=0.2, bright=1.0),
+    # batch 06
+    "mercury": dict(chords=[[47, 54, 59, 66], [43, 50, 55, 62], [45, 52, 57, 64], [42, 49, 54, 61]], bar=8.0, step=0.5, bright=0.75),
+    "mercury_s": dict(chords=[[47, 54, 59, 66], [43, 50, 55, 62], [45, 52, 57, 64], [42, 49, 54, 61]], bar=4.0, step=0.25, bright=0.95),
+    "orbit": dict(chords=[[50, 57, 61, 66], [47, 54, 59, 62], [43, 50, 57, 59], [45, 52, 57, 61]], bar=8.0, step=0.5, bright=0.55),
+    "orbit_s": dict(chords=[[50, 57, 61, 66], [47, 54, 59, 62], [43, 50, 57, 59], [45, 52, 57, 61]], bar=4.0, step=0.25, bright=0.85),
+    "deep_s": dict(chords=[[41, 48, 53, 60], [44, 51, 56, 60], [39, 46, 51, 58], [43, 50, 55, 58]], bar=4.0, step=0.25, bright=0.8),
+    "sky2_s": dict(chords=[[55, 62, 67, 71], [52, 59, 64, 67], [48, 55, 60, 64], [50, 57, 62, 66]], bar=4.0, step=0.25, bright=0.95),
 }
 PRESET_FOR = {"long": "space", "short_sun": "short", "short_sleep": "sleep",
               "b2_trees": "forest", "b2_asteroid": "space", "b2_med": "sea",
