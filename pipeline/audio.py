@@ -67,6 +67,9 @@ PRESETS = {
     "microbe_s": dict(chords=[[48, 55, 62, 64], [53, 60, 64, 69], [50, 57, 60, 65], [55, 62, 65, 67]], bar=3.0, step=0.1875, bright=0.95),
     # The Crush Files (sweet, bouncy major)
     "crush_s": dict(chords=[[53, 60, 64, 69], [50, 57, 62, 65], [55, 62, 67, 71], [52, 59, 64, 67]], bar=3.2, step=0.2, bright=1.0),
+    # The Crush Files #2 (blush, warm golden hour) and #3 (butterflies, dusk), batch 07
+    "crush_blush_s": dict(chords=[[55, 62, 66, 71], [52, 59, 64, 67], [48, 55, 64, 67], [50, 57, 62, 66]], bar=3.0, step=0.1875, bright=0.95),
+    "crush_dusk_s": dict(chords=[[50, 57, 62, 66], [47, 54, 59, 62], [43, 50, 55, 62], [45, 52, 57, 61]], bar=3.4, step=0.2125, bright=0.85),
     # batch 06
     "mercury": dict(chords=[[47, 54, 59, 66], [43, 50, 55, 62], [45, 52, 57, 64], [42, 49, 54, 61]], bar=8.0, step=0.5, bright=0.75),
     "mercury_s": dict(chords=[[47, 54, 59, 66], [43, 50, 55, 62], [45, 52, 57, 64], [42, 49, 54, 61]], bar=4.0, step=0.25, bright=0.95),
@@ -74,6 +77,14 @@ PRESETS = {
     "orbit_s": dict(chords=[[50, 57, 61, 66], [47, 54, 59, 62], [43, 50, 57, 59], [45, 52, 57, 61]], bar=4.0, step=0.25, bright=0.85),
     "deep_s": dict(chords=[[41, 48, 53, 60], [44, 51, 56, 60], [39, 46, 51, 58], [43, 50, 55, 58]], bar=4.0, step=0.25, bright=0.8),
     "sky2_s": dict(chords=[[55, 62, 67, 71], [52, 59, 64, 67], [48, 55, 60, 64], [50, 57, 62, 66]], bar=4.0, step=0.25, bright=0.95),
+    # batch 07 twin moons (dreamy Eb lydian) + Uranus tilt Short (cool, suspended)
+    "twinmoon": dict(chords=[[51, 58, 62, 69], [48, 55, 62, 67], [44, 51, 58, 63], [46, 53, 58, 65]], bar=8.0, step=0.5, bright=0.6),
+    "twinmoon_s": dict(chords=[[51, 58, 62, 69], [48, 55, 62, 67], [44, 51, 58, 63], [46, 53, 58, 65]], bar=4.0, step=0.25, bright=0.9),
+    "tilt_s": dict(chords=[[49, 56, 61, 66], [45, 52, 59, 64], [47, 54, 59, 66], [42, 49, 56, 61]], bar=4.0, step=0.25, bright=0.85),
+    # batch 07 volcano (dark D minor, low and brooding) + abyss (deep-sea nodule Short)
+    "volcano": dict(chords=[[38, 45, 50, 53], [34, 41, 46, 50], [36, 43, 48, 52], [33, 40, 45, 49]], bar=8.0, step=0.5, bright=0.6),
+    "volcano_s": dict(chords=[[38, 45, 50, 53], [34, 41, 46, 50], [36, 43, 48, 52], [33, 40, 45, 49]], bar=4.0, step=0.25, bright=0.85),
+    "abyss_s": dict(chords=[[40, 47, 52, 59], [43, 50, 55, 59], [38, 45, 50, 57], [36, 43, 50, 55]], bar=4.0, step=0.375, bright=0.7),
 }
 PRESET_FOR = {"long": "space", "short_sun": "short", "short_sleep": "sleep",
               "b2_trees": "forest", "b2_asteroid": "space", "b2_med": "sea",

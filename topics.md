@@ -29,13 +29,20 @@
 - What If You Lived on Mercury? (long; BepiColombo arrival, 21 Nov 2026) — Shorts: We Just Reached Mercury. Could You Live There?; On Mercury, One Day Lasts Two Years; What If You Texted Voyager 1 Right Now? (one light-day, 18 Nov 2026); We Hit an Asteroid. Now We're Checking the Damage (Hera at Dimorphos); A Star Just Exploded. What If One Went Off Near Us? (SN 2026ahvu)
 - What If You Lived in Space for 10 Years? (long; China's first year-long Tiangong stay) — Shorts: What If You Lived in Space for 10 Years?; Why Astronauts Come Home Taller; What If the Ozone Layer Disappeared? (2026 ozone hole)
 
+## Batch 07 (2026-11-27, Friday) — all 10 uploaded Unlisted with the channel's own uploader on 2026-11-27 (~02:56 WAT)
+- What If Earth Had Two Moons? (long; mini-moon 2026 QQ8, MPC 29 Oct 2026) — Shorts: Earth Just Caught a Second Moon; What If the Moon Had Its Own Moon? (submoons); What If Earth Were Tipped Over Like Uranus? (Uranus opposition, 25 Nov 2026)
+- What If Every Volcano Erupted at Once? (long; Iwo Jima eruption, Oct–Nov 2026) — Shorts: What If Every Volcano Erupted at the Same Time?; This Island Just Grew 125 Acres (Iwo Jima); This Rock Has 245 Animals Living Inside It (nodule fauna, Sci Rep Nov 2026)
+- The Crush Files #2 Why You Blush Around Your Crush; #3 Why Your Crush Gives You Butterflies
+
 ## The Crush Files
 - #1 What Your Brain Does When Your Crush Texts Back (Short, made 2026-11-20) — uploaded Unlisted 2026-11-21: https://www.youtube.com/shorts/T460l6IQHBI
+- #2 Why You Blush Around Your Crush (batch 07, 2026-11-27) — https://www.youtube.com/shorts/OjHkAsKYO3k
+- #3 Why Your Crush Gives You Butterflies (batch 07, 2026-11-27) — https://www.youtube.com/shorts/nNvo9tk5v4E
 
 # Crush Files backlog (Kai, 3D-world/2D-character style; use 2 per run, never repeat)
-Butterflies in your stomach (adrenaline, gut blood flow) · Why you blush around your crush · Your heart rate when they walk in · ~~What your brain does when they text back (dopamine, reward)~~ (used: #1, 2026-11-20) · Why you can't stop thinking about them · Why you get clumsy and forget words · Why time flies when you're together · Do your pupils really grow when you see them? · Is love at first sight real? · Why rejection literally hurts (social pain studies) · Why you replay every conversation at 3 a.m. · Why a crush's voice sounds different · Why you notice their name everywhere (attention bias) · Why crushes fade · The science of a first-text panic
+~~Butterflies in your stomach (adrenaline, gut blood flow)~~ (used: #3, 2026-11-27) · ~~Why you blush around your crush~~ (used: #2, 2026-11-27) · Your heart rate when they walk in · ~~What your brain does when they text back (dopamine, reward)~~ (used: #1, 2026-11-20) · Why you can't stop thinking about them · Why you get clumsy and forget words · Why time flies when you're together · Do your pupils really grow when you see them? · Is love at first sight real? · Why rejection literally hurts (social pain studies) · Why you replay every conversation at 3 a.m. · Why a crush's voice sounds different · Why you notice their name everywhere (attention bias) · Why crushes fade · The science of a first-text panic
 
 # Backlog (owner's ideas, use first)
-Space: Earth stopped spinning · falling into Jupiter · a rogue planet enters the Solar System · a moon with its own moon ("moonmoons") · Earth orbiting two suns · a day longer than a year, like Venus · Earth inside a nebula
-Earth: it never stopped raining · every volcano erupted at once · oceans twice as deep · every ant disappeared · a fast-spinning early Earth with few-hour days
+Space: Earth stopped spinning · falling into Jupiter · a rogue planet enters the Solar System · ~~a moon with its own moon ("moonmoons")~~ (batch 07 Short) · Earth orbiting two suns · a day longer than a year, like Venus · Earth inside a nebula
+Earth: it never stopped raining · ~~every volcano erupted at once~~ (batch 07) · oceans twice as deep · every ant disappeared · a fast-spinning early Earth with few-hour days
 Human body: only drinking seawater · frozen and woken in 100 years · blue copper-based blood like an octopus · breathing with a bird's lungs · humans kept their tails · a tardigrade's survival tricks
